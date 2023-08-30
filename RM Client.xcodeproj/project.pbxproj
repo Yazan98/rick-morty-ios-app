@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		6D6AEE4D700853ED3E4241DC /* Pods_RM_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570911696F1459959E228AB6 /* Pods_RM_Client.framework */; };
 		71B144E606F2509088BC1A89 /* Pods_RM_Client_RM_ClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C21BB944CC559832AB420C8 /* Pods_RM_Client_RM_ClientUITests.framework */; };
+		8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC35E2A9FFCE400F4B558 /* RmLocalStorage.swift */; };
+		8A0FC3632A9FFEAF00F4B558 /* RmBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3622A9FFEAF00F4B558 /* RmBaseVC.swift */; };
+		8A0FC3652A9FFFF900F4B558 /* AuthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3642A9FFFF900F4B558 /* AuthScreenVC.swift */; };
+		8A0FC3672AA004A600F4B558 /* RmThemeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3662AA004A600F4B558 /* RmThemeUtils.swift */; };
+		8A0FC3692AA0058B00F4B558 /* OnBoardingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3682AA0058B00F4B558 /* OnBoardingScreenVC.swift */; };
+		8A0FC36B2AA005FB00F4B558 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC36A2AA005FB00F4B558 /* HomeScreenVC.swift */; };
 		8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6332A9FF870003FB5DA /* AppDelegate.swift */; };
 		8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */; };
 		8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6372A9FF870003FB5DA /* SplashScreenVC.swift */; };
@@ -45,6 +51,12 @@
 		570911696F1459959E228AB6 /* Pods_RM_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RM_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57342F62A4E20AD83F3721B7 /* Pods-RM ClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RM ClientTests.debug.xcconfig"; path = "Target Support Files/Pods-RM ClientTests/Pods-RM ClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C21BB944CC559832AB420C8 /* Pods_RM_Client_RM_ClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RM_Client_RM_ClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0FC35E2A9FFCE400F4B558 /* RmLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmLocalStorage.swift; sourceTree = "<group>"; };
+		8A0FC3622A9FFEAF00F4B558 /* RmBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmBaseVC.swift; sourceTree = "<group>"; };
+		8A0FC3642A9FFFF900F4B558 /* AuthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenVC.swift; sourceTree = "<group>"; };
+		8A0FC3662AA004A600F4B558 /* RmThemeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmThemeUtils.swift; sourceTree = "<group>"; };
+		8A0FC3682AA0058B00F4B558 /* OnBoardingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenVC.swift; sourceTree = "<group>"; };
+		8A0FC36A2AA005FB00F4B558 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		8A38D6302A9FF870003FB5DA /* RM Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RM Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A38D6332A9FF870003FB5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +122,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A0FC3562A9FFC7600F4B558 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FC35E2A9FFCE400F4B558 /* RmLocalStorage.swift */,
+				8A0FC3662AA004A600F4B558 /* RmThemeUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8A0FC3572A9FFC7A00F4B558 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FC3602A9FFD9400F4B558 /* OnBoarding */,
+				8A0FC35D2A9FFCB600F4B558 /* Auth */,
+				8A0FC35C2A9FFCA700F4B558 /* Settings */,
+				8A0FC35B2A9FFC9F00F4B558 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8A0FC3582A9FFC8100F4B558 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A0FC3592A9FFC8800F4B558 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		8A0FC35A2A9FFC9200F4B558 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A0FC35B2A9FFC9F00F4B558 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FC36A2AA005FB00F4B558 /* HomeScreenVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8A0FC35C2A9FFCA700F4B558 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8A0FC35D2A9FFCB600F4B558 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FC3642A9FFFF900F4B558 /* AuthScreenVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8A0FC3602A9FFD9400F4B558 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FC3682AA0058B00F4B558 /* OnBoardingScreenVC.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		8A0FC3612A9FFEA100F4B558 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FC3622A9FFEAF00F4B558 /* RmBaseVC.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		8A38D6272A9FF870003FB5DA = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +227,12 @@
 		8A38D6322A9FF870003FB5DA /* RM Client */ = {
 			isa = PBXGroup;
 			children = (
+				8A0FC3612A9FFEA100F4B558 /* Core */,
+				8A0FC35A2A9FFC9200F4B558 /* Views */,
+				8A0FC3592A9FFC8800F4B558 /* UseCases */,
+				8A0FC3582A9FFC8100F4B558 /* Services */,
+				8A0FC3572A9FFC7A00F4B558 /* Features */,
+				8A0FC3562A9FFC7600F4B558 /* Utils */,
 				8A38D6332A9FF870003FB5DA /* AppDelegate.swift */,
 				8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */,
 				8A38D6372A9FF870003FB5DA /* SplashScreenVC.swift */,
@@ -400,7 +498,13 @@
 			files = (
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
 				8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */,
+				8A0FC3652A9FFFF900F4B558 /* AuthScreenVC.swift in Sources */,
+				8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */,
+				8A0FC3672AA004A600F4B558 /* RmThemeUtils.swift in Sources */,
+				8A0FC3632A9FFEAF00F4B558 /* RmBaseVC.swift in Sources */,
 				8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */,
+				8A0FC3692AA0058B00F4B558 /* OnBoardingScreenVC.swift in Sources */,
+				8A0FC36B2AA005FB00F4B558 /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
