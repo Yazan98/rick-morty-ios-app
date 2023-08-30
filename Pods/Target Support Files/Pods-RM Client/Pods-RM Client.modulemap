@@ -1,0 +1,6 @@
+framework module Pods_RM_Client {
+  umbrella header "Pods-RM Client-umbrella.h"
+
+  export *
+  module * { export * }
+}
