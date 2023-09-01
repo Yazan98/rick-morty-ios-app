@@ -12,6 +12,7 @@ class SplashScreenVC: RmBaseVC {
     override func onScreenStarted() {
         super.onScreenStarted()
 
+        // Init Splash Design
         view.backgroundColor = RmThemeUtils.shared.getApplicationPrimaryColor()
         let configuration = UIImage.SymbolConfiguration(textStyle: .footnote, scale: .small)
         let image = UIImage(systemName: "person.circle.fill", withConfiguration: configuration)
@@ -23,8 +24,12 @@ class SplashScreenVC: RmBaseVC {
         
         
         view.addSubview(imageView)
-        onCenterViewConstraints(targetView: imageView)
         
+        // Add Logo Constraints
+        imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -80).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 80).isActive = true
         
         // Start The Timer to Load Splash Screen Time
         DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
@@ -34,7 +39,7 @@ class SplashScreenVC: RmBaseVC {
     
     private func onValidateApplicationNavigation() {
         if RmLocalStorage.shared.isFirstTimeAppOpened() {
-            onPushViewController(vc: OnBoardingScreenVC.getInstance())
+            self.navigationController?.pushViewController(OnBoardingScreenVC.getInstance(), animated: true)
             return
         }
         

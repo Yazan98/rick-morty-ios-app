@@ -13,8 +13,11 @@
 		8A0FC3632A9FFEAF00F4B558 /* RmBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3622A9FFEAF00F4B558 /* RmBaseVC.swift */; };
 		8A0FC3652A9FFFF900F4B558 /* AuthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3642A9FFFF900F4B558 /* AuthScreenVC.swift */; };
 		8A0FC3672AA004A600F4B558 /* RmThemeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3662AA004A600F4B558 /* RmThemeUtils.swift */; };
-		8A0FC3692AA0058B00F4B558 /* OnBoardingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC3682AA0058B00F4B558 /* OnBoardingScreenVC.swift */; };
 		8A0FC36B2AA005FB00F4B558 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC36A2AA005FB00F4B558 /* HomeScreenVC.swift */; };
+		8A1AE2512AA1781D00EED489 /* OnBoardingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE24F2AA1781D00EED489 /* OnBoardingScreenVC.swift */; };
+		8A1AE2522AA1781D00EED489 /* OnBoardingScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2502AA1781D00EED489 /* OnBoardingScreenVC.xib */; };
+		8A1AE2552AA1819900EED489 /* OnBoardingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2532AA1819900EED489 /* OnBoardingTabViewController.swift */; };
+		8A1AE2562AA1819900EED489 /* OnBoardingTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2542AA1819900EED489 /* OnBoardingTabViewController.xib */; };
 		8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6332A9FF870003FB5DA /* AppDelegate.swift */; };
 		8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */; };
 		8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6372A9FF870003FB5DA /* SplashScreenVC.swift */; };
@@ -55,8 +58,11 @@
 		8A0FC3622A9FFEAF00F4B558 /* RmBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmBaseVC.swift; sourceTree = "<group>"; };
 		8A0FC3642A9FFFF900F4B558 /* AuthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenVC.swift; sourceTree = "<group>"; };
 		8A0FC3662AA004A600F4B558 /* RmThemeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmThemeUtils.swift; sourceTree = "<group>"; };
-		8A0FC3682AA0058B00F4B558 /* OnBoardingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenVC.swift; sourceTree = "<group>"; };
 		8A0FC36A2AA005FB00F4B558 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		8A1AE24F2AA1781D00EED489 /* OnBoardingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenVC.swift; sourceTree = "<group>"; };
+		8A1AE2502AA1781D00EED489 /* OnBoardingScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingScreenVC.xib; sourceTree = "<group>"; };
+		8A1AE2532AA1819900EED489 /* OnBoardingTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingTabViewController.swift; sourceTree = "<group>"; };
+		8A1AE2542AA1819900EED489 /* OnBoardingTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingTabViewController.xib; sourceTree = "<group>"; };
 		8A38D6302A9FF870003FB5DA /* RM Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RM Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A38D6332A9FF870003FB5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,7 +195,10 @@
 		8A0FC3602A9FFD9400F4B558 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
-				8A0FC3682AA0058B00F4B558 /* OnBoardingScreenVC.swift */,
+				8A1AE24F2AA1781D00EED489 /* OnBoardingScreenVC.swift */,
+				8A1AE2502AA1781D00EED489 /* OnBoardingScreenVC.xib */,
+				8A1AE2532AA1819900EED489 /* OnBoardingTabViewController.swift */,
+				8A1AE2542AA1819900EED489 /* OnBoardingTabViewController.xib */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -368,7 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1AE2562AA1819900EED489 /* OnBoardingTabViewController.xib in Resources */,
 				8A38D63D2A9FF873003FB5DA /* Assets.xcassets in Resources */,
+				8A1AE2522AA1781D00EED489 /* OnBoardingScreenVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,11 +510,12 @@
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
 				8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */,
 				8A0FC3652A9FFFF900F4B558 /* AuthScreenVC.swift in Sources */,
+				8A1AE2552AA1819900EED489 /* OnBoardingTabViewController.swift in Sources */,
 				8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */,
 				8A0FC3672AA004A600F4B558 /* RmThemeUtils.swift in Sources */,
+				8A1AE2512AA1781D00EED489 /* OnBoardingScreenVC.swift in Sources */,
 				8A0FC3632A9FFEAF00F4B558 /* RmBaseVC.swift in Sources */,
 				8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */,
-				8A0FC3692AA0058B00F4B558 /* OnBoardingScreenVC.swift in Sources */,
 				8A0FC36B2AA005FB00F4B558 /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
