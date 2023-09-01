@@ -14,6 +14,7 @@ public class RmBaseVC : UIViewController {
         super.viewDidLoad()
         view?.backgroundColor = .systemBackground
         onScreenStarted()
+        setupViewsContent()
     }
     
     public func onPushViewController(vc: RmBaseVC) {
@@ -22,6 +23,10 @@ public class RmBaseVC : UIViewController {
     
     public func onPushViewController(vc: UITabBarController) {
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    public func setupViewsContent() {
+        // Setup subViews Inflated from Nib File
     }
     
     public func onCenterViewConstraints(targetView: UIView) {
@@ -34,6 +39,10 @@ public class RmBaseVC : UIViewController {
     }
     
     public func onPushPresentStackView(vc: RmBaseVC) {
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    public func onPushPresentStackView(vc: UITabBarController) {
         self.present(vc, animated: true, completion: nil)
     }
     

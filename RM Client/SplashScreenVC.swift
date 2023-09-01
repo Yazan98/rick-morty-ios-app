@@ -44,7 +44,7 @@ class SplashScreenVC: RmBaseVC {
         }
         
         if RmLocalStorage.shared.isUserLoggedIn() {
-            onPushViewController(vc: HomeScreenVC.getInstance())
+            onPushPresentStackView(vc: HomeScreenVC.getInstance())
             return
         }
         

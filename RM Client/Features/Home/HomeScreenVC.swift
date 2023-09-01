@@ -11,7 +11,9 @@ import UIKit
 public class HomeScreenVC: UITabBarController {
     
     public static func getInstance() -> HomeScreenVC {
-        return HomeScreenVC()
+        let vc = HomeScreenVC()
+        vc.modalPresentationStyle = .fullScreen
+        return vc
     }
     
     public override func viewDidLoad() {

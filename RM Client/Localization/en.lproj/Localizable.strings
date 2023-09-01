@@ -16,3 +16,13 @@
 "welcome_message_1" = "Welcome to Rick and Morty IOS Client Application, this is the First Full Demo App Contains Most cases of IOS App Development, Swipe Ma Friendo Swipe";
 "welcome_message_2" = "You can Here Descover Characters, Stories, Articles and More, Swipe Ma Friendo Swipe";
 "welcome_message_3" = "You Can go to Another Planet in this Application by Trying Morty Expermentals Click Continue to Continue xD";
+
+"login_by_apple" = "Login By Apple Account";
+"skip" = "Skip";
+"login_by_email" = "Login By Email";
+"login_hint_email" = "Enter Email Address";
+"login_hint_password" = "Enter Password";
+
+"email_address_required" = "Email Address Required !";
+"password_required" = "Password Required !";
+
