@@ -27,7 +27,7 @@ class OnBoardingScreenVC: UIPageViewController, UIPageViewControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Welcome"
+        title = "welcome".getLocalizedString()
         
         delegate = self
         dataSource = self
@@ -69,7 +69,7 @@ class OnBoardingScreenVC: UIPageViewController, UIPageViewControllerDelegate, UI
     private func addPagerViewControl() {
         pageViewController = UIPageControl(frame: CGRect(
             x: 0,
-            y: UIScreen.main.bounds.maxY - 75,
+            y: UIScreen.main.bounds.maxY - 150,
             width: UIScreen.main.bounds.width,
             height: 50
         ))

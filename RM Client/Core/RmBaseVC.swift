@@ -20,7 +20,7 @@ public class RmBaseVC : UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    public func onPushViewController(vc: UITableViewController) {
+    public func onPushViewController(vc: UITabBarController) {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -52,7 +52,7 @@ class SplashScreenVC: RmBaseVC {
     }
     
     override func getTitle() -> String {
-        return "Splash"
+        return "splash".getLocalizedString()
     }
 
 }

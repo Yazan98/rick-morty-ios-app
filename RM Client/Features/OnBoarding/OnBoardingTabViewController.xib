@@ -23,16 +23,6 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOD-qd-aRX">
-                    <rect key="frame" x="290" y="773" width="93" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Continue">
-                        <color key="baseForegroundColor" name="PrimaryColor"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="onContinueButtonListener:" destination="-1" eventType="touchUpInside" id="x9w-yv-oxb"/>
-                    </connections>
-                </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-p8-ICN">
                     <rect key="frame" x="20" y="114" width="353" height="200"/>
                     <constraints>
@@ -51,6 +41,16 @@
                     <color key="textColor" systemColor="systemGray3Color"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOD-qd-aRX">
+                    <rect key="frame" x="290" y="773" width="93" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Continue">
+                        <color key="baseForegroundColor" name="PrimaryColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="onContinueButtonListener:" destination="-1" eventType="touchUpInside" id="7uf-Ss-aXj"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

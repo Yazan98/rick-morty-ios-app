@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class HomeScreenVC: UITableViewController {
+public class HomeScreenVC: UITabBarController {
     
     public static func getInstance() -> HomeScreenVC {
         return HomeScreenVC()
@@ -16,5 +16,6 @@ public class HomeScreenVC: UITableViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        title = "home".getLocalizedString()
     }
 }

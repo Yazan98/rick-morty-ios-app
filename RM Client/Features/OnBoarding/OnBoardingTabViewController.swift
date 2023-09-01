@@ -15,15 +15,15 @@ class OnBoardingTabViewController: UIViewController {
     @IBOutlet weak var continueButtonInstance: UIButton!
     private var tabIndex: Int = 0
     private let titles = [
-        "Rick And Morty TV Show",
-        "Discover News",
-        "Next Version of the Planet"
+        "welcome_title_1".getLocalizedString(),
+        "welcome_title_2".getLocalizedString(),
+        "welcome_title_3".getLocalizedString()
     ]
     
     private let messages = [
-        "Welcome to Rick and Morty IOS Client Application, this is the First Full Demo App Contains Most cases of IOS App Development, Swipe Ma Friendo Swipe",
-        "You can Here Descover Characters, Stories, Articles and More, Swipe Ma Friendo Swipe",
-        "You Can go to Another Planet in this Application by Trying Morty Expermentals Click Continue to Continue xD"
+        "welcome_message_1".getLocalizedString(),
+        "welcome_message_2".getLocalizedString(),
+        "welcome_message_3".getLocalizedString()
     ]
    
     public static func getInstance(index: Int) -> OnBoardingTabViewController {
@@ -36,6 +36,7 @@ class OnBoardingTabViewController: UIViewController {
         super.viewDidLoad()
         if tabIndex == 2 {
             continueButtonInstance?.isHidden = false
+            continueButtonInstance?.isEnabled = true
         } else {
             continueButtonInstance?.isHidden = true
         }
@@ -43,10 +44,12 @@ class OnBoardingTabViewController: UIViewController {
         imageViewInstance?.image = UIImage(named: "OnBoardingImage\(tabIndex + 1)")
         tabTitleLabel?.text = titles[tabIndex]
         tabDescriptionLabel?.text = messages[tabIndex]
+        continueButtonInstance?.addTarget(self, action: #selector(onContinueButtonListener), for: .touchUpInside)
     }
-    @IBAction func onContinueButtonListener(_ sender: Any) {
+    
+    @objc func onContinueButtonListener(_ sender: Any) {
         RmLocalStorage.shared.onUpdateAppOpeningStatus(newStatus: true)
-        self.navigationController?.pushViewController(HomeScreenVC.getInstance(), animated: true)
+        self.navigationController?.pushViewController(AuthScreenVC.getInstance(), animated: true)
     }
     
     public func addTabIndex(index: Int) {

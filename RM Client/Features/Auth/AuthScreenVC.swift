@@ -22,7 +22,7 @@ class AuthScreenVC: RmBaseVC {
     }
     
     override func getTitle() -> String {
-        return "Login"
+        return "login".getLocalizedString()
     }
 
 }

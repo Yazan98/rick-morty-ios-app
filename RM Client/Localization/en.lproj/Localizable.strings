@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  RM Client
+
+  Created by Yazan Tarifi on 01/09/2023.
+  
+*/
+"splash" = "Splash";
+"welcome" = "Welcome";
+"login" = "Login";
+"home" = "Home";
+"welcome_title_1" = "Rick And Morty TV Show";
+"welcome_title_2" = "Discover News";
+"welcome_title_3" = "Next Version of the Planet";
+
+"welcome_message_1" = "Welcome to Rick and Morty IOS Client Application, this is the First Full Demo App Contains Most cases of IOS App Development, Swipe Ma Friendo Swipe";
+"welcome_message_2" = "You can Here Descover Characters, Stories, Articles and More, Swipe Ma Friendo Swipe";
+"welcome_message_3" = "You Can go to Another Planet in this Application by Trying Morty Expermentals Click Continue to Continue xD";
