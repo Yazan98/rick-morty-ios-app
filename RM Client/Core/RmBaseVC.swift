@@ -13,6 +13,7 @@ public class RmBaseVC : UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         view?.backgroundColor = .systemBackground
+        setupListeners()
         onScreenStarted()
         setupViewsContent()
     }
@@ -23,6 +24,10 @@ public class RmBaseVC : UIViewController {
     
     public func onPushViewController(vc: UITabBarController) {
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    public func setupListeners() {
+        // Setup Listeners Will be Filled in Each VC
     }
     
     public func setupViewsContent() {
@@ -36,6 +41,16 @@ public class RmBaseVC : UIViewController {
             targetView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             targetView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
         ])
+    }
+    
+    public func onLoadingState(view: UIActivityIndicatorView?, loadingState: Bool) {
+        if loadingState {
+            view?.isHidden = false
+            view?.startAnimating()
+        } else {
+            view?.isHidden = true
+            view?.stopAnimating()
+        }
     }
     
     public func onPushPresentStackView(vc: RmBaseVC) {

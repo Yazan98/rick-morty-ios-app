@@ -26,3 +26,6 @@
 "email_address_required" = "Email Address Required !";
 "password_required" = "Password Required !";
 
+"locations" = "Locations";
+"episods" = "Episods";
+"layout_style" = "Style";

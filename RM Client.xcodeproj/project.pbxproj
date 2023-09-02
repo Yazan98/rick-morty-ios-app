@@ -23,6 +23,27 @@
 		8A1AE26A2AA24FD300EED489 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2682AA24FD300EED489 /* HomeScreenVC.swift */; };
 		8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2692AA24FD300EED489 /* HomeScreenVC.xib */; };
 		8A1AE2712AA2541800EED489 /* HomeScreenContentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2702AA2541800EED489 /* HomeScreenContentTabViewController.swift */; };
+		8A1AE2752AA256B200EED489 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2732AA256B200EED489 /* HomeTabViewController.swift */; };
+		8A1AE2762AA256B200EED489 /* HomeTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2742AA256B200EED489 /* HomeTabViewController.xib */; };
+		8A1AE2792AA256D500EED489 /* EpisodsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2772AA256D500EED489 /* EpisodsTabViewController.swift */; };
+		8A1AE27A2AA256D500EED489 /* EpisodsTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2782AA256D500EED489 /* EpisodsTabViewController.xib */; };
+		8A1AE27D2AA256E300EED489 /* LocationsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE27B2AA256E300EED489 /* LocationsTabViewController.swift */; };
+		8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE27C2AA256E300EED489 /* LocationsTabViewController.xib */; };
+		8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2802AA25DD100EED489 /* RmBaseViewModel.swift */; };
+		8A1AE2832AA25EE100EED489 /* RmRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2822AA25EE100EED489 /* RmRequestMethod.swift */; };
+		8A1AE2852AA25F2300EED489 /* RmRequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2842AA25F2300EED489 /* RmRequestUrl.swift */; };
+		8A1AE2872AA25FC500EED489 /* RmRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2862AA25FC500EED489 /* RmRequestInfo.swift */; };
+		8A1AE2892AA281BB00EED489 /* RmRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2882AA281BB00EED489 /* RmRequestManager.swift */; };
+		8A1AE28B2AA286F400EED489 /* RmUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE28A2AA286F400EED489 /* RmUseCase.swift */; };
+		8A1AE28D2AA2875A00EED489 /* RmUseCaseListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE28C2AA2875A00EED489 /* RmUseCaseListener.swift */; };
+		8A1AE2902AA289A900EED489 /* RmBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE28F2AA289A900EED489 /* RmBaseModel.swift */; };
+		8A1AE2922AA28AE100EED489 /* RmAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2912AA28AE100EED489 /* RmAction.swift */; };
+		8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2932AA28B3200EED489 /* HomeTabViewModel.swift */; };
+		8A1AE2972AA28B4900EED489 /* HomeTabAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2962AA28B4900EED489 /* HomeTabAction.swift */; };
+		8A1AE2992AA320EA00EED489 /* RmViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2982AA320EA00EED489 /* RmViewModelState.swift */; };
+		8A1AE29C2AA3256D00EED489 /* HomeScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */; };
+		8A1AE29E2AA3270300EED489 /* HomeScreenHeaderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */; };
+		8A1AE2A02AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE29F2AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift */; };
 		8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6332A9FF870003FB5DA /* AppDelegate.swift */; };
 		8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */; };
 		8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6372A9FF870003FB5DA /* SplashScreenVC.swift */; };
@@ -74,6 +95,27 @@
 		8A1AE2682AA24FD300EED489 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		8A1AE2692AA24FD300EED489 /* HomeScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenVC.xib; sourceTree = "<group>"; };
 		8A1AE2702AA2541800EED489 /* HomeScreenContentTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenContentTabViewController.swift; sourceTree = "<group>"; };
+		8A1AE2732AA256B200EED489 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		8A1AE2742AA256B200EED489 /* HomeTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabViewController.xib; sourceTree = "<group>"; };
+		8A1AE2772AA256D500EED489 /* EpisodsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodsTabViewController.swift; sourceTree = "<group>"; };
+		8A1AE2782AA256D500EED489 /* EpisodsTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodsTabViewController.xib; sourceTree = "<group>"; };
+		8A1AE27B2AA256E300EED489 /* LocationsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTabViewController.swift; sourceTree = "<group>"; };
+		8A1AE27C2AA256E300EED489 /* LocationsTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsTabViewController.xib; sourceTree = "<group>"; };
+		8A1AE2802AA25DD100EED489 /* RmBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmBaseViewModel.swift; sourceTree = "<group>"; };
+		8A1AE2822AA25EE100EED489 /* RmRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmRequestMethod.swift; sourceTree = "<group>"; };
+		8A1AE2842AA25F2300EED489 /* RmRequestUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmRequestUrl.swift; sourceTree = "<group>"; };
+		8A1AE2862AA25FC500EED489 /* RmRequestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmRequestInfo.swift; sourceTree = "<group>"; };
+		8A1AE2882AA281BB00EED489 /* RmRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmRequestManager.swift; sourceTree = "<group>"; };
+		8A1AE28A2AA286F400EED489 /* RmUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmUseCase.swift; sourceTree = "<group>"; };
+		8A1AE28C2AA2875A00EED489 /* RmUseCaseListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmUseCaseListener.swift; sourceTree = "<group>"; };
+		8A1AE28F2AA289A900EED489 /* RmBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmBaseModel.swift; sourceTree = "<group>"; };
+		8A1AE2912AA28AE100EED489 /* RmAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmAction.swift; sourceTree = "<group>"; };
+		8A1AE2932AA28B3200EED489 /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		8A1AE2962AA28B4900EED489 /* HomeTabAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabAction.swift; sourceTree = "<group>"; };
+		8A1AE2982AA320EA00EED489 /* RmViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmViewModelState.swift; sourceTree = "<group>"; };
+		8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenItem.swift; sourceTree = "<group>"; };
+		8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenHeaderItem.swift; sourceTree = "<group>"; };
+		8A1AE29F2AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeScreenItemsVerticalListUseCase.swift; sourceTree = "<group>"; };
 		8A38D6302A9FF870003FB5DA /* RM Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RM Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A38D6332A9FF870003FB5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +205,10 @@
 		8A0FC3582A9FFC8100F4B558 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8A1AE2822AA25EE100EED489 /* RmRequestMethod.swift */,
+				8A1AE2842AA25F2300EED489 /* RmRequestUrl.swift */,
+				8A1AE2862AA25FC500EED489 /* RmRequestInfo.swift */,
+				8A1AE2882AA281BB00EED489 /* RmRequestManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -170,6 +216,7 @@
 		8A0FC3592A9FFC8800F4B558 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				8A1AE29F2AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -184,6 +231,9 @@
 		8A0FC35B2A9FFC9F00F4B558 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8A1AE2952AA28B4100EED489 /* Actions */,
+				8A1AE27F2AA25DA800EED489 /* ViewModels */,
+				8A1AE2722AA2549F00EED489 /* Tabs */,
 				8A1AE2682AA24FD300EED489 /* HomeScreenVC.swift */,
 				8A1AE2692AA24FD300EED489 /* HomeScreenVC.xib */,
 				8A1AE2702AA2541800EED489 /* HomeScreenContentTabViewController.swift */,
@@ -222,6 +272,11 @@
 			isa = PBXGroup;
 			children = (
 				8A0FC3622A9FFEAF00F4B558 /* RmBaseVC.swift */,
+				8A1AE2802AA25DD100EED489 /* RmBaseViewModel.swift */,
+				8A1AE28A2AA286F400EED489 /* RmUseCase.swift */,
+				8A1AE28C2AA2875A00EED489 /* RmUseCaseListener.swift */,
+				8A1AE2912AA28AE100EED489 /* RmAction.swift */,
+				8A1AE2982AA320EA00EED489 /* RmViewModelState.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -232,6 +287,53 @@
 				8A1AE25E2AA1987100EED489 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		8A1AE2722AA2549F00EED489 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				8A1AE2732AA256B200EED489 /* HomeTabViewController.swift */,
+				8A1AE2742AA256B200EED489 /* HomeTabViewController.xib */,
+				8A1AE2772AA256D500EED489 /* EpisodsTabViewController.swift */,
+				8A1AE2782AA256D500EED489 /* EpisodsTabViewController.xib */,
+				8A1AE27B2AA256E300EED489 /* LocationsTabViewController.swift */,
+				8A1AE27C2AA256E300EED489 /* LocationsTabViewController.xib */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		8A1AE27F2AA25DA800EED489 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A1AE2932AA28B3200EED489 /* HomeTabViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A1AE28E2AA2899B00EED489 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A1AE29A2AA3256400EED489 /* Home */,
+				8A1AE28F2AA289A900EED489 /* RmBaseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A1AE2952AA28B4100EED489 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				8A1AE2962AA28B4900EED489 /* HomeTabAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		8A1AE29A2AA3256400EED489 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */,
+				8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		8A38D6272A9FF870003FB5DA = {
@@ -259,6 +361,7 @@
 		8A38D6322A9FF870003FB5DA /* RM Client */ = {
 			isa = PBXGroup;
 			children = (
+				8A1AE28E2AA2899B00EED489 /* Models */,
 				8A1AE2592AA1985600EED489 /* Localization */,
 				8A0FC3612A9FFEA100F4B558 /* Core */,
 				8A0FC35A2A9FFC9200F4B558 /* Views */,
@@ -403,7 +506,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1AE2562AA1819900EED489 /* OnBoardingTabViewController.xib in Resources */,
+				8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */,
 				8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */,
+				8A1AE27A2AA256D500EED489 /* EpisodsTabViewController.xib in Resources */,
+				8A1AE2762AA256B200EED489 /* HomeTabViewController.xib in Resources */,
 				8A1AE25C2AA1987100EED489 /* Localizable.strings in Resources */,
 				8A1AE2672AA1F6C700EED489 /* AuthScreenVC.xib in Resources */,
 				8A38D63D2A9FF873003FB5DA /* Assets.xcassets in Resources */,
@@ -535,18 +641,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1AE2992AA320EA00EED489 /* RmViewModelState.swift in Sources */,
+				8A1AE2892AA281BB00EED489 /* RmRequestManager.swift in Sources */,
+				8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */,
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
 				8A1AE2712AA2541800EED489 /* HomeScreenContentTabViewController.swift in Sources */,
+				8A1AE28B2AA286F400EED489 /* RmUseCase.swift in Sources */,
+				8A1AE2792AA256D500EED489 /* EpisodsTabViewController.swift in Sources */,
 				8A1AE26A2AA24FD300EED489 /* HomeScreenVC.swift in Sources */,
+				8A1AE2922AA28AE100EED489 /* RmAction.swift in Sources */,
 				8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */,
+				8A1AE27D2AA256E300EED489 /* LocationsTabViewController.swift in Sources */,
+				8A1AE2852AA25F2300EED489 /* RmRequestUrl.swift in Sources */,
+				8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */,
 				8A1AE2552AA1819900EED489 /* OnBoardingTabViewController.swift in Sources */,
 				8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */,
+				8A1AE29C2AA3256D00EED489 /* HomeScreenItem.swift in Sources */,
 				8A0FC3672AA004A600F4B558 /* RmThemeUtils.swift in Sources */,
 				8A1AE2512AA1781D00EED489 /* OnBoardingScreenVC.swift in Sources */,
+				8A1AE2752AA256B200EED489 /* HomeTabViewController.swift in Sources */,
 				8A1AE2582AA197F600EED489 /* Utils.swift in Sources */,
+				8A1AE2A02AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift in Sources */,
+				8A1AE29E2AA3270300EED489 /* HomeScreenHeaderItem.swift in Sources */,
 				8A0FC3632A9FFEAF00F4B558 /* RmBaseVC.swift in Sources */,
 				8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */,
+				8A1AE28D2AA2875A00EED489 /* RmUseCaseListener.swift in Sources */,
+				8A1AE2832AA25EE100EED489 /* RmRequestMethod.swift in Sources */,
+				8A1AE2902AA289A900EED489 /* RmBaseModel.swift in Sources */,
 				8A1AE2662AA1F6C700EED489 /* AuthScreenVC.swift in Sources */,
+				8A1AE2972AA28B4900EED489 /* HomeTabAction.swift in Sources */,
+				8A1AE2872AA25FC500EED489 /* RmRequestInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

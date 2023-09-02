@@ -25,3 +25,7 @@
 
 "email_address_required" = "البريد الالكتروني مطلوب";
 "password_required" = "كلمة السر مطلوبة";
+
+"locations" = "المواقع";
+"episods" = "الحلقات";
+"layout_style" = "القائمة";
