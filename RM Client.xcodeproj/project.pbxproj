@@ -44,6 +44,10 @@
 		8A1AE29C2AA3256D00EED489 /* HomeScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */; };
 		8A1AE29E2AA3270300EED489 /* HomeScreenHeaderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */; };
 		8A1AE2A02AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE29F2AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift */; };
+		8A1AE2A22AA3989200EED489 /* RmPermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2A12AA3989200EED489 /* RmPermissionsManager.swift */; };
+		8A1AE2A42AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2A32AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift */; };
+		8A1AE2AA2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2A82AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift */; };
+		8A1AE2AB2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2A92AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib */; };
 		8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6332A9FF870003FB5DA /* AppDelegate.swift */; };
 		8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */; };
 		8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6372A9FF870003FB5DA /* SplashScreenVC.swift */; };
@@ -116,6 +120,10 @@
 		8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenItem.swift; sourceTree = "<group>"; };
 		8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenHeaderItem.swift; sourceTree = "<group>"; };
 		8A1AE29F2AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeScreenItemsVerticalListUseCase.swift; sourceTree = "<group>"; };
+		8A1AE2A12AA3989200EED489 /* RmPermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmPermissionsManager.swift; sourceTree = "<group>"; };
+		8A1AE2A32AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenNotificationsPermissionItem.swift; sourceTree = "<group>"; };
+		8A1AE2A82AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		8A1AE2A92AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A38D6302A9FF870003FB5DA /* RM Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RM Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A38D6332A9FF870003FB5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A38D6352A9FF870003FB5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +195,7 @@
 				8A0FC35E2A9FFCE400F4B558 /* RmLocalStorage.swift */,
 				8A0FC3662AA004A600F4B558 /* RmThemeUtils.swift */,
 				8A1AE2572AA197F600EED489 /* Utils.swift */,
+				8A1AE2A12AA3989200EED489 /* RmPermissionsManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -224,6 +233,8 @@
 		8A0FC35A2A9FFC9200F4B558 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8A1AE2A82AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift */,
+				8A1AE2A92AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,6 +343,7 @@
 			children = (
 				8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */,
 				8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */,
+				8A1AE2A32AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -507,6 +519,7 @@
 			files = (
 				8A1AE2562AA1819900EED489 /* OnBoardingTabViewController.xib in Resources */,
 				8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */,
+				8A1AE2AB2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib in Resources */,
 				8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */,
 				8A1AE27A2AA256D500EED489 /* EpisodsTabViewController.xib in Resources */,
 				8A1AE2762AA256B200EED489 /* HomeTabViewController.xib in Resources */,
@@ -642,7 +655,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1AE2992AA320EA00EED489 /* RmViewModelState.swift in Sources */,
+				8A1AE2A42AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift in Sources */,
 				8A1AE2892AA281BB00EED489 /* RmRequestManager.swift in Sources */,
+				8A1AE2A22AA3989200EED489 /* RmPermissionsManager.swift in Sources */,
 				8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */,
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
 				8A1AE2712AA2541800EED489 /* HomeScreenContentTabViewController.swift in Sources */,
@@ -656,6 +671,7 @@
 				8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */,
 				8A1AE2552AA1819900EED489 /* OnBoardingTabViewController.swift in Sources */,
 				8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */,
+				8A1AE2AA2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift in Sources */,
 				8A1AE29C2AA3256D00EED489 /* HomeScreenItem.swift in Sources */,
 				8A0FC3672AA004A600F4B558 /* RmThemeUtils.swift in Sources */,
 				8A1AE2512AA1781D00EED489 /* OnBoardingScreenVC.swift in Sources */,

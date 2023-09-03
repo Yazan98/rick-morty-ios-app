@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeTabViewController: RmBaseVC {
+class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     public static func getInstance() -> HomeTabViewController {
         return HomeTabViewController()
@@ -15,6 +15,7 @@ class HomeTabViewController: RmBaseVC {
     
     @IBOutlet weak var screenCollectionView: UICollectionView!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
+    
     private let viewModel = HomeTabViewModel()
     private var listSortingButton: UIBarButtonItem = {
        let gridImage = UIImage(systemName: "circle.grid.2x2.fill")?.withRenderingMode(.alwaysOriginal)
@@ -47,18 +48,103 @@ class HomeTabViewController: RmBaseVC {
     
     override func setupListeners() {
         super.setupListeners()
-        viewModel.homeScreenItemsState.onSubscribe { state in
-            
+        viewModel.homeScreenItemsState.onSubscribe { [self] state in
+            onInitCollectionViewData(items: state)
         }
         
         viewModel.homeScreenLoadingState.onSubscribe { loading in
             self.onLoadingState(view: self.loadingView, loadingState: loading)
+            if loading == true {
+                self.screenCollectionView?.isHidden = true
+            }
         }
     }
+    
+    private func onInitCollectionViewData(items: [HomeScreenItem]) {
+        self.screenCollectionView?.dataSource = self
+        self.screenCollectionView?.delegate = self
+        self.screenCollectionView?.isHidden = false
+        self.screenCollectionView?.register(
+            HomeScreenHeaderCollectionViewCell.self,
+            forCellWithReuseIdentifier: HomeScreenItemConsts.HOME_SCREEN_HEADER
+        )
+        
+        self.screenCollectionView?.register(
+            HomeScreenHeaderCollectionViewCell.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: HomeScreenItemConsts.HOME_SCREEN_HEADER
+        )
+
+        self.screenCollectionView?.register(
+            UINib(nibName: "HomeScreenHeaderCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: HomeScreenItemConsts.HOME_SCREEN_HEADER
+        )
+        
+        self.screenCollectionView?.reloadData()
+    }
+    
+    
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return viewModel.homeScreenItemsState.getValue()?.count ?? 0
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        let screenItemsList = viewModel.homeScreenItemsState.getValue() ?? []
+        
+        switch screenItemsList[indexPath.section].getIdentifire() {
+        case HomeScreenItemConsts.HOME_SCREEN_HEADER:
+            return CGSize(width: UIScreen.main.bounds.width - 20, height: 90)
+            
+        default:
+            return CGSize(width: 0, height: 0)
+        }
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var content: [HomeScreenItem] = []
+        if viewModel.homeScreenItemsState.getValue() != nil {
+            content = viewModel.homeScreenItemsState.getValue() ?? []
+        }
+        
+        switch content[indexPath.section].getIdentifire() {
+        case HomeScreenItemConsts.HOME_SCREEN_HEADER:
+            let headerCell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: HomeScreenItemConsts.HOME_SCREEN_HEADER,
+                for: indexPath
+            ) as! HomeScreenHeaderCollectionViewCell
+                        
+            return headerCell
+        default:
+            let headerCell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: HomeScreenItemConsts.HOME_SCREEN_HEADER,
+                for: indexPath
+            ) as! HomeScreenHeaderCollectionViewCell
+            
+            return headerCell
+        }
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        viewForSupplementaryElementOfKind kind: String,
+        at indexPath: IndexPath
+    ) -> UICollectionReusableView {
+        return UICollectionReusableView()
+    }
+    
     
     override func setupViewsContent() {
         super.setupViewsContent()
         self.navigationItem.rightBarButtonItem = listSortingButton
+        screenCollectionView?.backgroundColor = .systemBackground
     }
     
     override func getTitle() -> String {

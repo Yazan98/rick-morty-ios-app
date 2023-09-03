@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTabViewController" customModule="RM_Client" customModuleProvider="target">
             <connections>
-                <outlet property="loadingView" destination="QBJ-f3-sTx" id="tGb-7y-l1F"/>
-                <outlet property="screenCollectionView" destination="IJf-85-fgR" id="3r5-xf-lsi"/>
+                <outlet property="loadingView" destination="AAv-gf-OgT" id="5zk-xl-iVg"/>
+                <outlet property="screenCollectionView" destination="Eg1-Df-fY2" id="pnr-vd-jbB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,29 +20,30 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IJf-85-fgR">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Eg1-Df-fY2">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hrG-AH-oH0">
-                        <size key="itemSize" width="128" height="128"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Yf-vW-elo">
+                        <size key="itemSize" width="153" height="131"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="QBJ-f3-sTx">
-                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AAv-gf-OgT">
+                    <rect key="frame" x="186.66666666666666" y="416" width="19.666666666666657" height="20"/>
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="IJf-85-fgR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="G4R-Sz-qnp"/>
-                <constraint firstItem="QBJ-f3-sTx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Yns-vi-5ui"/>
-                <constraint firstItem="IJf-85-fgR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="az6-zy-n9u"/>
-                <constraint firstItem="QBJ-f3-sTx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="biM-PO-6em"/>
-                <constraint firstItem="IJf-85-fgR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cGM-Zg-zeZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IJf-85-fgR" secondAttribute="trailing" id="sKU-yD-AEf"/>
+                <constraint firstItem="Eg1-Df-fY2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8nf-aW-oC7"/>
+                <constraint firstItem="Eg1-Df-fY2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8wV-dX-u99"/>
+                <constraint firstItem="AAv-gf-OgT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DF4-7C-1fa"/>
+                <constraint firstItem="Eg1-Df-fY2" firstAttribute="centerX" secondItem="AAv-gf-OgT" secondAttribute="centerX" id="gby-qU-MkQ"/>
+                <constraint firstItem="AAv-gf-OgT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186.66666666666666" id="hCm-O5-Gw2"/>
+                <constraint firstItem="Eg1-Df-fY2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oLc-QL-10F"/>
+                <constraint firstItem="Eg1-Df-fY2" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yif-Yx-Am5"/>
             </constraints>
             <point key="canvasLocation" x="35.877862595419849" y="-11.267605633802818"/>
         </view>

@@ -29,3 +29,6 @@
 "locations" = "Locations";
 "episods" = "Episods";
 "layout_style" = "Style";
+
+"home_title" = "Rick And Morty IOS Application";
+"home_description" = "This is A Native IOS Application Built With Native Libraries, UICellectionView With Multiple ViewTypes, Navigation Between Components, Realm, Alamofire and More ...";

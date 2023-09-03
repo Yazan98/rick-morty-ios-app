@@ -15,4 +15,5 @@ public protocol HomeScreenItem {
 
 public class HomeScreenItemConsts {
     public static let HOME_SCREEN_HEADER = "Header"
+    public static let HOME_SCREEN_NOTIFICATION_PERMISSION = "Notifications"
 }
