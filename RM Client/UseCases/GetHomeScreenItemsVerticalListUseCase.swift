@@ -22,14 +22,38 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
                 screenItems.append(HomeScreenNotificationsPermissionItem())
             }
             
-            // 3. Storage Permission
-            if RmPermissionsManager.shared.isStoragePermissionEnabled() == false {
-                screenItems.append(HomeScreenStorageItem())
+            // 3. List of Characters
+            self?.getCharachets(query: ["status": "alive"]) { result in
+                screenItems.append(HomeScreenCharactersListItem(
+                    list: result,
+                    sectionName: "section_alive".getLocalizedString()
+                ))
+                
+                // 3. Storage Permission
+                if RmPermissionsManager.shared.isStoragePermissionEnabled() == false {
+                    screenItems.append(HomeScreenStorageItem())
+                }
+                
+                self?.onSubmitLoadingValue(newState: false)
+                self?.onSubmitResponseValue(value: screenItems)
             }
-
-            self?.onSubmitLoadingValue(newState: false)
-            self?.onSubmitResponseValue(value: screenItems)
         }
+    }
+    
+    private func getCharachets(query: [String:String], onComplete: @escaping ([RmCharacterModel]) -> Void) {
+        RmRequestManager.shared.onExecuteSingleRequest(
+            requestInfo: RmRequestInfo(
+                requestMethod: .get,
+                requestUrl: RmRequestUrl.shared.getCharacters(),
+                queryParams: query,
+                dispatchQueue: getDispatchQueueInstance()
+            ),
+            responseType: RmListResponse<RmCharacterModel>.self) { response in
+                onComplete(response.results ?? [])
+            } onErrorResponse: { error in
+                // Read From Realm When Build Database
+                onComplete([])
+            }
     }
 }
 

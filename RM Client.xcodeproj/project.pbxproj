@@ -60,6 +60,13 @@
 		8ABDA7CF2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7CD2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift */; };
 		8ABDA7D02AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7CE2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib */; };
 		8ABDA7D22AA47FF800761091 /* HomeScreenStorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7D12AA47FF800761091 /* HomeScreenStorageItem.swift */; };
+		8ABDA7D42AA484F200761091 /* RmCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7D32AA484F200761091 /* RmCharacterModel.swift */; };
+		8ABDA7D62AA485B300761091 /* RmListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7D52AA485B300761091 /* RmListResponse.swift */; };
+		8ABDA7D82AA48B3800761091 /* HomeScreenCharactersListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7D72AA48B3800761091 /* HomeScreenCharactersListItem.swift */; };
+		8ABDA7DB2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7D92AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift */; };
+		8ABDA7DC2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7DA2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.xib */; };
+		8ABDA7DF2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7DD2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.swift */; };
+		8ABDA7E02AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7DE2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib */; };
 		B86B04827A1A13130C9A1DED /* Pods_RM_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C19FB42DE75FC12B507F33 /* Pods_RM_ClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +152,13 @@
 		8ABDA7CD2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoragePermissionItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		8ABDA7CE2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStoragePermissionItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		8ABDA7D12AA47FF800761091 /* HomeScreenStorageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenStorageItem.swift; sourceTree = "<group>"; };
+		8ABDA7D32AA484F200761091 /* RmCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmCharacterModel.swift; sourceTree = "<group>"; };
+		8ABDA7D52AA485B300761091 /* RmListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmListResponse.swift; sourceTree = "<group>"; };
+		8ABDA7D72AA48B3800761091 /* HomeScreenCharactersListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCharactersListItem.swift; sourceTree = "<group>"; };
+		8ABDA7D92AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCharactersCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABDA7DA2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenCharactersCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ABDA7DD2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHorizantelCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABDA7DE2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterHorizantelCollectionViewCell.xib; sourceTree = "<group>"; };
 		B590DFCCD614A5925A017F66 /* Pods-RM Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RM Client.debug.xcconfig"; path = "Target Support Files/Pods-RM Client/Pods-RM Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				8ABDA7CC2AA477E800761091 /* Home */,
+				8ABDA7DD2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.swift */,
+				8ABDA7DE2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,6 +351,8 @@
 			children = (
 				8A1AE29A2AA3256400EED489 /* Home */,
 				8A1AE28F2AA289A900EED489 /* RmBaseModel.swift */,
+				8ABDA7D32AA484F200761091 /* RmCharacterModel.swift */,
+				8ABDA7D52AA485B300761091 /* RmListResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,6 +372,7 @@
 				8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */,
 				8A1AE2A32AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift */,
 				8ABDA7D12AA47FF800761091 /* HomeScreenStorageItem.swift */,
+				8ABDA7D72AA48B3800761091 /* HomeScreenCharactersListItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -426,6 +445,8 @@
 				8ABDA7C92AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib */,
 				8ABDA7CD2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift */,
 				8ABDA7CE2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib */,
+				8ABDA7D92AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift */,
+				8ABDA7DA2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -544,12 +565,14 @@
 				8ABDA7D02AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib in Resources */,
 				8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */,
 				8A1AE2AB2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib in Resources */,
+				8ABDA7E02AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib in Resources */,
 				8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */,
 				8A1AE27A2AA256D500EED489 /* EpisodsTabViewController.xib in Resources */,
 				8A1AE2762AA256B200EED489 /* HomeTabViewController.xib in Resources */,
 				8A1AE25C2AA1987100EED489 /* Localizable.strings in Resources */,
 				8A1AE2672AA1F6C700EED489 /* AuthScreenVC.xib in Resources */,
 				8A38D63D2A9FF873003FB5DA /* Assets.xcassets in Resources */,
+				8ABDA7DC2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.xib in Resources */,
 				8A1AE2522AA1781D00EED489 /* OnBoardingScreenVC.xib in Resources */,
 				8ABDA7CB2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib in Resources */,
 			);
@@ -686,9 +709,11 @@
 				8A1AE2A22AA3989200EED489 /* RmPermissionsManager.swift in Sources */,
 				8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */,
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
+				8ABDA7DB2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift in Sources */,
 				8A1AE2712AA2541800EED489 /* HomeScreenContentTabViewController.swift in Sources */,
 				8A1AE28B2AA286F400EED489 /* RmUseCase.swift in Sources */,
 				8A1AE2792AA256D500EED489 /* EpisodsTabViewController.swift in Sources */,
+				8ABDA7D82AA48B3800761091 /* HomeScreenCharactersListItem.swift in Sources */,
 				8A1AE26A2AA24FD300EED489 /* HomeScreenVC.swift in Sources */,
 				8A1AE2922AA28AE100EED489 /* RmAction.swift in Sources */,
 				8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */,
@@ -704,7 +729,9 @@
 				8A1AE2512AA1781D00EED489 /* OnBoardingScreenVC.swift in Sources */,
 				8A1AE2752AA256B200EED489 /* HomeTabViewController.swift in Sources */,
 				8A1AE2582AA197F600EED489 /* Utils.swift in Sources */,
+				8ABDA7D62AA485B300761091 /* RmListResponse.swift in Sources */,
 				8A1AE2A02AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift in Sources */,
+				8ABDA7DF2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.swift in Sources */,
 				8A1AE29E2AA3270300EED489 /* HomeScreenHeaderItem.swift in Sources */,
 				8A0FC3632A9FFEAF00F4B558 /* RmBaseVC.swift in Sources */,
 				8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */,
@@ -714,6 +741,7 @@
 				8A1AE2902AA289A900EED489 /* RmBaseModel.swift in Sources */,
 				8A1AE2662AA1F6C700EED489 /* AuthScreenVC.swift in Sources */,
 				8A1AE2972AA28B4900EED489 /* HomeTabAction.swift in Sources */,
+				8ABDA7D42AA484F200761091 /* RmCharacterModel.swift in Sources */,
 				8A1AE2872AA25FC500EED489 /* RmRequestInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

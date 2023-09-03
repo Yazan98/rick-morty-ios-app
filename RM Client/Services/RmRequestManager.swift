@@ -24,8 +24,7 @@ public final class RmRequestManager {
             AF.request(
                 requestInfo.requestUrl,
                 method: self.getRequestMethod(method: requestInfo.requestMethod),
-                parameters: self.getRequestParams(request: requestInfo.queryParams ?? [:]),
-                encoding: URLEncoding(destination: .queryString) as! ParameterEncoder as! ParameterEncoding
+                parameters: self.getRequestParams(request: requestInfo.queryParams ?? [:])
             ).responseDecodable(of: responseType.self) { response in
                 DispatchQueue.main.async {
                     switch response.result {

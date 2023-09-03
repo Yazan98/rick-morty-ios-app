@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol RmBaseModel: Codable, Decodable {}
+protocol RmBaseModel: Codable {}

@@ -40,3 +40,6 @@
 "permission_button" = "Allow Storage";
 "storage_permission" = "Storage Camera and Gallery Access";
 "storage_permission_hint" = "Allow Rick and Morty Application to Access Camera and Storage to let users Use Download Function and Hold Long Click on The Image to Download it and this Feature Only Available in Character Page Screen";
+
+"section_alive" = "Alive";
+"section_view_more" = "View More";

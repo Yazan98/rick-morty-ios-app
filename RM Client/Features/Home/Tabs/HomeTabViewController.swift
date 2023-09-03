@@ -89,6 +89,11 @@ class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionVie
             UINib(nibName: "HomeStoragePermissionItemCollectionViewCell", bundle: nil),
             forCellWithReuseIdentifier: HomeScreenItemConsts.HOME_STORAGE
         )
+
+        self.screenCollectionView?.register(
+            UINib(nibName: "HomeScreenCharactersCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: HomeScreenItemConsts.CHARACTERS_LIST
+        )
         
         self.screenCollectionView?.reloadData()
     }
@@ -112,6 +117,8 @@ class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionVie
             return CGSize(width: UIScreen.main.bounds.width - 2, height: 190)
         case HomeScreenItemConsts.HOME_STORAGE:
             return CGSize(width: UIScreen.main.bounds.width - 2, height: 350)
+        case HomeScreenItemConsts.CHARACTERS_LIST:
+            return CGSize(width: UIScreen.main.bounds.width - 2, height: 350)
         default:
             return CGSize(width: 0, height: 0)
         }
@@ -133,6 +140,20 @@ class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionVie
                 withReuseIdentifier: HomeScreenItemConsts.HOME_SCREEN_HEADER,
                 for: indexPath
             ) as! HomeScreenHeaderCollectionViewCell
+                        
+            return headerCell
+        
+        case HomeScreenItemConsts.CHARACTERS_LIST:
+            guard let cell = content[indexPath.section] as? HomeScreenCharactersListItem else {
+                return HomeScreenCharactersCollectionViewCell()
+            }
+            
+            let headerCell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: HomeScreenItemConsts.CHARACTERS_LIST,
+                for: indexPath
+            ) as! HomeScreenCharactersCollectionViewCell
+            
+            headerCell.configure(item: cell)
                         
             return headerCell
             
