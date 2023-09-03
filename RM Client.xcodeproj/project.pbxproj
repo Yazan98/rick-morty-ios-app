@@ -27,8 +27,8 @@
 		8A1AE2762AA256B200EED489 /* HomeTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2742AA256B200EED489 /* HomeTabViewController.xib */; };
 		8A1AE2792AA256D500EED489 /* EpisodsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2772AA256D500EED489 /* EpisodsTabViewController.swift */; };
 		8A1AE27A2AA256D500EED489 /* EpisodsTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE2782AA256D500EED489 /* EpisodsTabViewController.xib */; };
-		8A1AE27D2AA256E300EED489 /* LocationsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE27B2AA256E300EED489 /* LocationsTabViewController.swift */; };
-		8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE27C2AA256E300EED489 /* LocationsTabViewController.xib */; };
+		8A1AE27D2AA256E300EED489 /* SettingsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE27B2AA256E300EED489 /* SettingsTabViewController.swift */; };
+		8A1AE27E2AA256E300EED489 /* SettingsTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AE27C2AA256E300EED489 /* SettingsTabViewController.xib */; };
 		8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2802AA25DD100EED489 /* RmBaseViewModel.swift */; };
 		8A1AE2832AA25EE100EED489 /* RmRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2822AA25EE100EED489 /* RmRequestMethod.swift */; };
 		8A1AE2852AA25F2300EED489 /* RmRequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE2842AA25F2300EED489 /* RmRequestUrl.swift */; };
@@ -73,6 +73,9 @@
 		8ABDA7EA2AA4F28200761091 /* GetEpisodsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7E92AA4F28200761091 /* GetEpisodsUseCase.swift */; };
 		8ABDA7ED2AA4F67F00761091 /* EpisodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7EB2AA4F67F00761091 /* EpisodeCollectionViewCell.swift */; };
 		8ABDA7EE2AA4F67F00761091 /* EpisodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7EC2AA4F67F00761091 /* EpisodeCollectionViewCell.xib */; };
+		8ABDA7F22AA5110E00761091 /* RmSettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F12AA5110E00761091 /* RmSettingsItem.swift */; };
+		8ABDA7F52AA5171400761091 /* SettingsItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F32AA5171400761091 /* SettingsItemCollectionViewCell.swift */; };
+		8ABDA7F62AA5171400761091 /* SettingsItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F42AA5171400761091 /* SettingsItemCollectionViewCell.xib */; };
 		B86B04827A1A13130C9A1DED /* Pods_RM_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C19FB42DE75FC12B507F33 /* Pods_RM_ClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,8 +124,8 @@
 		8A1AE2742AA256B200EED489 /* HomeTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabViewController.xib; sourceTree = "<group>"; };
 		8A1AE2772AA256D500EED489 /* EpisodsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodsTabViewController.swift; sourceTree = "<group>"; };
 		8A1AE2782AA256D500EED489 /* EpisodsTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodsTabViewController.xib; sourceTree = "<group>"; };
-		8A1AE27B2AA256E300EED489 /* LocationsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTabViewController.swift; sourceTree = "<group>"; };
-		8A1AE27C2AA256E300EED489 /* LocationsTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsTabViewController.xib; sourceTree = "<group>"; };
+		8A1AE27B2AA256E300EED489 /* SettingsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewController.swift; sourceTree = "<group>"; };
+		8A1AE27C2AA256E300EED489 /* SettingsTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTabViewController.xib; sourceTree = "<group>"; };
 		8A1AE2802AA25DD100EED489 /* RmBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmBaseViewModel.swift; sourceTree = "<group>"; };
 		8A1AE2822AA25EE100EED489 /* RmRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmRequestMethod.swift; sourceTree = "<group>"; };
 		8A1AE2842AA25F2300EED489 /* RmRequestUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmRequestUrl.swift; sourceTree = "<group>"; };
@@ -171,6 +174,9 @@
 		8ABDA7E92AA4F28200761091 /* GetEpisodsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEpisodsUseCase.swift; sourceTree = "<group>"; };
 		8ABDA7EB2AA4F67F00761091 /* EpisodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8ABDA7EC2AA4F67F00761091 /* EpisodeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ABDA7F12AA5110E00761091 /* RmSettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmSettingsItem.swift; sourceTree = "<group>"; };
+		8ABDA7F32AA5171400761091 /* SettingsItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABDA7F42AA5171400761091 /* SettingsItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		B590DFCCD614A5925A017F66 /* Pods-RM Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RM Client.debug.xcconfig"; path = "Target Support Files/Pods-RM Client/Pods-RM Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +281,8 @@
 				8ABDA7DE2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib */,
 				8ABDA7EB2AA4F67F00761091 /* EpisodeCollectionViewCell.swift */,
 				8ABDA7EC2AA4F67F00761091 /* EpisodeCollectionViewCell.xib */,
+				8ABDA7F32AA5171400761091 /* SettingsItemCollectionViewCell.swift */,
+				8ABDA7F42AA5171400761091 /* SettingsItemCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,8 +355,8 @@
 				8A1AE2742AA256B200EED489 /* HomeTabViewController.xib */,
 				8A1AE2772AA256D500EED489 /* EpisodsTabViewController.swift */,
 				8A1AE2782AA256D500EED489 /* EpisodsTabViewController.xib */,
-				8A1AE27B2AA256E300EED489 /* LocationsTabViewController.swift */,
-				8A1AE27C2AA256E300EED489 /* LocationsTabViewController.xib */,
+				8A1AE27B2AA256E300EED489 /* SettingsTabViewController.swift */,
+				8A1AE27C2AA256E300EED489 /* SettingsTabViewController.xib */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				8ABDA7D32AA484F200761091 /* RmCharacterModel.swift */,
 				8ABDA7D52AA485B300761091 /* RmListResponse.swift */,
 				8ABDA7E32AA4ED1A00761091 /* RmEpisodModel.swift */,
+				8ABDA7F12AA5110E00761091 /* RmSettingsItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -581,8 +590,9 @@
 			files = (
 				8A1AE2562AA1819900EED489 /* OnBoardingTabViewController.xib in Resources */,
 				8ABDA7EE2AA4F67F00761091 /* EpisodeCollectionViewCell.xib in Resources */,
+				8ABDA7F62AA5171400761091 /* SettingsItemCollectionViewCell.xib in Resources */,
 				8ABDA7D02AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib in Resources */,
-				8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */,
+				8A1AE27E2AA256E300EED489 /* SettingsTabViewController.xib in Resources */,
 				8A1AE2AB2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib in Resources */,
 				8ABDA7E02AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib in Resources */,
 				8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */,
@@ -727,6 +737,7 @@
 				8ABDA7D22AA47FF800761091 /* HomeScreenStorageItem.swift in Sources */,
 				8A1AE2A22AA3989200EED489 /* RmPermissionsManager.swift in Sources */,
 				8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */,
+				8ABDA7F52AA5171400761091 /* SettingsItemCollectionViewCell.swift in Sources */,
 				8ABDA7EA2AA4F28200761091 /* GetEpisodsUseCase.swift in Sources */,
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
 				8ABDA7DB2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift in Sources */,
@@ -737,7 +748,7 @@
 				8A1AE26A2AA24FD300EED489 /* HomeScreenVC.swift in Sources */,
 				8A1AE2922AA28AE100EED489 /* RmAction.swift in Sources */,
 				8A38D6342A9FF870003FB5DA /* AppDelegate.swift in Sources */,
-				8A1AE27D2AA256E300EED489 /* LocationsTabViewController.swift in Sources */,
+				8A1AE27D2AA256E300EED489 /* SettingsTabViewController.swift in Sources */,
 				8A1AE2852AA25F2300EED489 /* RmRequestUrl.swift in Sources */,
 				8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */,
 				8ABDA7E42AA4ED1A00761091 /* RmEpisodModel.swift in Sources */,
@@ -762,6 +773,7 @@
 				8ABDA7ED2AA4F67F00761091 /* EpisodeCollectionViewCell.swift in Sources */,
 				8A1AE2832AA25EE100EED489 /* RmRequestMethod.swift in Sources */,
 				8ABDA7CA2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift in Sources */,
+				8ABDA7F22AA5110E00761091 /* RmSettingsItem.swift in Sources */,
 				8A1AE2902AA289A900EED489 /* RmBaseModel.swift in Sources */,
 				8A1AE2662AA1F6C700EED489 /* AuthScreenVC.swift in Sources */,
 				8A1AE2972AA28B4900EED489 /* HomeTabAction.swift in Sources */,

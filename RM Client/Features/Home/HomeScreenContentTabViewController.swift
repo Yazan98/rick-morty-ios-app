@@ -21,7 +21,7 @@ class HomeScreenContentTabViewController: UITabBarController {
         setViewControllers([
             getTabViewController(vc: HomeTabViewController.getInstance(), image: "house", title: "home"),
             getTabViewController(vc: EpisodsTabViewController.getInstance(), image: "list.bullet", title: "episods"),
-            getTabViewController(vc: LocationsTabViewController.getInstance(), image: "location", title: "locations"),
+            getTabViewController(vc: SettingsTabViewController.getInstance(), image: "gearshape", title: "settings"),
         ], animated: true)
     }
 

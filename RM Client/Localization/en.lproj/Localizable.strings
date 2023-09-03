@@ -45,3 +45,8 @@
 "section_view_more" = "View More";
 "section_male" = "Male Characters";
 "section_female" = "Female Characters";
+"settings" = "Settings";
+
+"theme" = "Theme";
+"language" = "Language";
+"developer_link" = "Application Developer";

@@ -46,3 +46,8 @@
 "section_view_more" = "عرض المزيد";
 "section_male" = "رجال المسلسل";
 "section_female" = "نساء المسلسل";
+"settings" = "الاعدادات";
+
+"theme" = "المظهر";
+"language" = "اللغة";
+"developer_link" = "مطور التطبيق";
