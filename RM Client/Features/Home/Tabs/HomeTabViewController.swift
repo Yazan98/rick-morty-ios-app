@@ -116,7 +116,7 @@ class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionVie
         case HomeScreenItemConsts.HOME_SCREEN_NOTIFICATION_PERMISSION:
             return CGSize(width: UIScreen.main.bounds.width - 2, height: 190)
         case HomeScreenItemConsts.HOME_STORAGE:
-            return CGSize(width: UIScreen.main.bounds.width - 2, height: 350)
+            return CGSize(width: UIScreen.main.bounds.width - 2, height: 290)
         case HomeScreenItemConsts.CHARACTERS_LIST:
             return CGSize(width: UIScreen.main.bounds.width - 2, height: 350)
         default:

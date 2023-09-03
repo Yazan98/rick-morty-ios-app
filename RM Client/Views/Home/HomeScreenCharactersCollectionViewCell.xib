@@ -31,7 +31,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wnC-S3-LXx">
-                        <rect key="frame" x="20" y="71" width="378" height="122"/>
+                        <rect key="frame" x="2" y="71" width="414" height="140"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l7I-fb-ze4">
                             <size key="itemSize" width="128" height="128"/>
@@ -44,14 +44,14 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="HBD-LY-ytL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="4T7-YF-cch"/>
-                <constraint firstAttribute="trailing" secondItem="foh-WT-S6J" secondAttribute="trailing" constant="20" id="6dx-wg-si3"/>
-                <constraint firstItem="wnC-S3-LXx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="O0R-1u-a1C"/>
-                <constraint firstAttribute="trailing" secondItem="wnC-S3-LXx" secondAttribute="trailing" constant="20" id="ZWp-Uo-b78"/>
-                <constraint firstItem="foh-WT-S6J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="lIi-c5-hzJ"/>
-                <constraint firstAttribute="bottom" secondItem="wnC-S3-LXx" secondAttribute="bottom" constant="20" id="qGl-Te-9y8"/>
-                <constraint firstItem="HBD-LY-ytL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="r3K-R3-RFN"/>
-                <constraint firstItem="wnC-S3-LXx" firstAttribute="top" secondItem="HBD-LY-ytL" secondAttribute="bottom" constant="30" id="uL9-mC-HzB"/>
+                <constraint firstItem="wnC-S3-LXx" firstAttribute="top" secondItem="HBD-LY-ytL" secondAttribute="bottom" constant="30" id="5En-zt-thp"/>
+                <constraint firstAttribute="bottom" secondItem="wnC-S3-LXx" secondAttribute="bottom" constant="2" id="Nsx-Yg-baZ"/>
+                <constraint firstItem="HBD-LY-ytL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Swq-a4-dgC"/>
+                <constraint firstItem="HBD-LY-ytL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="VEJ-qf-eg1"/>
+                <constraint firstAttribute="trailing" secondItem="foh-WT-S6J" secondAttribute="trailing" constant="19.999999999999943" id="c66-XR-iI1"/>
+                <constraint firstAttribute="trailing" secondItem="wnC-S3-LXx" secondAttribute="trailing" constant="2" id="g6u-my-SmQ"/>
+                <constraint firstItem="wnC-S3-LXx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="u94-4B-leZ"/>
+                <constraint firstItem="HBD-LY-ytL" firstAttribute="baseline" secondItem="foh-WT-S6J" secondAttribute="baseline" id="zdb-FE-6aB"/>
             </constraints>
             <size key="customSize" width="418" height="213"/>
             <connections>

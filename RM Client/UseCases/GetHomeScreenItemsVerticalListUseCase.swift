@@ -17,25 +17,47 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
             // 1. Header Item
             screenItems.append(HomeScreenHeaderItem())
             
-            // 2. Notifications Permission
-            if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
-                screenItems.append(HomeScreenNotificationsPermissionItem())
-            }
-            
-            // 3. List of Characters
+            // 2. List of Characters
             self?.getCharachets(query: ["status": "alive"]) { result in
-                screenItems.append(HomeScreenCharactersListItem(
-                    list: result,
-                    sectionName: "section_alive".getLocalizedString()
-                ))
-                
-                // 3. Storage Permission
-                if RmPermissionsManager.shared.isStoragePermissionEnabled() == false {
-                    screenItems.append(HomeScreenStorageItem())
+                if result.isEmpty == false {
+                    screenItems.append(HomeScreenCharactersListItem(
+                        list: result,
+                        sectionName: "section_alive".getLocalizedString()
+                    ))
                 }
                 
-                self?.onSubmitLoadingValue(newState: false)
-                self?.onSubmitResponseValue(value: screenItems)
+                // 3. Notifications Permission
+                if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
+                    screenItems.append(HomeScreenNotificationsPermissionItem())
+                }
+                
+                // 4. Male Characters
+                self?.getCharachets(query: ["gender": "male"]) { result in
+                    if result.isEmpty == false {
+                        screenItems.append(HomeScreenCharactersListItem(
+                            list: result.reversed(),
+                            sectionName: "section_male".getLocalizedString()
+                        ))
+                    }
+                    
+                    // 5. Storage Permission
+                    if RmPermissionsManager.shared.isStoragePermissionEnabled() == false {
+                        screenItems.append(HomeScreenStorageItem())
+                    }
+                    
+                    // 6. Male Characters
+                    self?.getCharachets(query: ["gender": "female"]) { result in
+                        if result.isEmpty == false {
+                            screenItems.append(HomeScreenCharactersListItem(
+                                list: result.reversed(),
+                                sectionName: "section_female".getLocalizedString()
+                            ))
+                        }
+                        
+                        self?.onSubmitLoadingValue(newState: false)
+                        self?.onSubmitResponseValue(value: screenItems)
+                    }
+                }
             }
         }
     }

@@ -63,7 +63,7 @@ class HomeScreenCharactersCollectionViewCell: UICollectionViewCell, UICollection
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        return CGSize(width: (UIScreen.main.bounds.width / 2) + 40, height: 280)
+        return CGSize(width: (UIScreen.main.bounds.width / 2) + 40, height: 300)
     }
     
     
