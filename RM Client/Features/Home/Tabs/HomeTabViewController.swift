@@ -128,7 +128,10 @@ class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionVie
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
         var content: [HomeScreenItem] = []
         if viewModel.homeScreenItemsState.getValue() != nil {
             content = viewModel.homeScreenItemsState.getValue() ?? []

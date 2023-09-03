@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Episode" id="gTV-IL-0wX" customClass="EpisodeCollectionViewCell" customModule="RM_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="568" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S01E01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkM-yt-T1v">
+                        <rect key="frame" x="9.9999999999999964" y="10" width="55.666666666666657" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZG-7n-Jzt">
+                        <rect key="frame" x="10" y="41" width="196.66666666666666" height="27.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shown At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-3L-mFY">
+                        <rect key="frame" x="485.66666666666669" y="10" width="72.333333333333314" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-z0-tFL">
+                        <rect key="frame" x="10" y="88.666666666666671" width="548" height="2"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="1p6-9h-voq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GZG-z0-tFL" secondAttribute="trailing" constant="10" id="4cK-nx-jmI"/>
+                <constraint firstItem="GZG-z0-tFL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="9F7-aw-YIJ"/>
+                <constraint firstAttribute="trailing" secondItem="r3r-3L-mFY" secondAttribute="trailing" constant="10" id="UAB-Z7-BLs"/>
+                <constraint firstItem="r3r-3L-mFY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="anz-qg-R0V"/>
+                <constraint firstItem="RkM-yt-T1v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dhz-nG-xcb"/>
+                <constraint firstItem="RkM-yt-T1v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="m6Z-uV-zxu"/>
+                <constraint firstItem="DZG-7n-Jzt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="p7A-p4-O1O"/>
+                <constraint firstItem="DZG-7n-Jzt" firstAttribute="top" secondItem="RkM-yt-T1v" secondAttribute="bottom" constant="10" id="rPD-ME-hH8"/>
+                <constraint firstItem="GZG-z0-tFL" firstAttribute="top" secondItem="DZG-7n-Jzt" secondAttribute="bottom" constant="20" id="u0a-19-N8K"/>
+            </constraints>
+            <size key="customSize" width="568" height="106"/>
+            <connections>
+                <outlet property="episodeNameView" destination="DZG-7n-Jzt" id="hfV-8a-XJz"/>
+                <outlet property="episodeView" destination="RkM-yt-T1v" id="nul-Si-kl6"/>
+                <outlet property="shownAtView" destination="r3r-3L-mFY" id="FyM-bw-0pb"/>
+            </connections>
+            <point key="canvasLocation" x="421.37404580152668" y="8.4507042253521139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

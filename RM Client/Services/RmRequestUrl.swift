@@ -13,6 +13,10 @@ public final class RmRequestUrl {
     
     private init() {}
     
+    public func getEpisodsList() -> String {
+        return "\(getBaseUrl())episode"
+    }
+    
     public func getCharacters() -> String {
         return "\(getBaseUrl())character"
     }
