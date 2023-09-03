@@ -55,6 +55,11 @@
 		8A38D64B2A9FF873003FB5DA /* RM_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D64A2A9FF873003FB5DA /* RM_ClientTests.swift */; };
 		8A38D6552A9FF873003FB5DA /* RM_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6542A9FF873003FB5DA /* RM_ClientUITests.swift */; };
 		8A38D6572A9FF873003FB5DA /* RM_ClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A38D6562A9FF873003FB5DA /* RM_ClientUITestsLaunchTests.swift */; };
+		8ABDA7CA2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7C82AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift */; };
+		8ABDA7CB2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7C92AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib */; };
+		8ABDA7CF2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7CD2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift */; };
+		8ABDA7D02AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7CE2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib */; };
+		8ABDA7D22AA47FF800761091 /* HomeScreenStorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7D12AA47FF800761091 /* HomeScreenStorageItem.swift */; };
 		B86B04827A1A13130C9A1DED /* Pods_RM_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C19FB42DE75FC12B507F33 /* Pods_RM_ClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +140,11 @@
 		8A38D6502A9FF873003FB5DA /* RM ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RM ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A38D6542A9FF873003FB5DA /* RM_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM_ClientUITests.swift; sourceTree = "<group>"; };
 		8A38D6562A9FF873003FB5DA /* RM_ClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM_ClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8ABDA7C82AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNotificationsPermissionCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABDA7C92AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNotificationsPermissionCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ABDA7CD2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoragePermissionItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABDA7CE2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStoragePermissionItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ABDA7D12AA47FF800761091 /* HomeScreenStorageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenStorageItem.swift; sourceTree = "<group>"; };
 		B590DFCCD614A5925A017F66 /* Pods-RM Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RM Client.debug.xcconfig"; path = "Target Support Files/Pods-RM Client/Pods-RM Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,8 +243,7 @@
 		8A0FC35A2A9FFC9200F4B558 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8A1AE2A82AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift */,
-				8A1AE2A92AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib */,
+				8ABDA7CC2AA477E800761091 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 				8A1AE29B2AA3256D00EED489 /* HomeScreenItem.swift */,
 				8A1AE29D2AA3270300EED489 /* HomeScreenHeaderItem.swift */,
 				8A1AE2A32AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift */,
+				8ABDA7D12AA47FF800761091 /* HomeScreenStorageItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -405,6 +415,19 @@
 				8A38D6562A9FF873003FB5DA /* RM_ClientUITestsLaunchTests.swift */,
 			);
 			path = "RM ClientUITests";
+			sourceTree = "<group>";
+		};
+		8ABDA7CC2AA477E800761091 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8A1AE2A82AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift */,
+				8A1AE2A92AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib */,
+				8ABDA7C82AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift */,
+				8ABDA7C92AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib */,
+				8ABDA7CD2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift */,
+				8ABDA7CE2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1AE2562AA1819900EED489 /* OnBoardingTabViewController.xib in Resources */,
+				8ABDA7D02AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib in Resources */,
 				8A1AE27E2AA256E300EED489 /* LocationsTabViewController.xib in Resources */,
 				8A1AE2AB2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib in Resources */,
 				8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */,
@@ -527,6 +551,7 @@
 				8A1AE2672AA1F6C700EED489 /* AuthScreenVC.xib in Resources */,
 				8A38D63D2A9FF873003FB5DA /* Assets.xcassets in Resources */,
 				8A1AE2522AA1781D00EED489 /* OnBoardingScreenVC.xib in Resources */,
+				8ABDA7CB2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +682,7 @@
 				8A1AE2992AA320EA00EED489 /* RmViewModelState.swift in Sources */,
 				8A1AE2A42AA3998200EED489 /* HomeScreenNotificationsPermissionItem.swift in Sources */,
 				8A1AE2892AA281BB00EED489 /* RmRequestManager.swift in Sources */,
+				8ABDA7D22AA47FF800761091 /* HomeScreenStorageItem.swift in Sources */,
 				8A1AE2A22AA3989200EED489 /* RmPermissionsManager.swift in Sources */,
 				8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */,
 				8A38D6382A9FF870003FB5DA /* SplashScreenVC.swift in Sources */,
@@ -670,6 +696,7 @@
 				8A1AE2852AA25F2300EED489 /* RmRequestUrl.swift in Sources */,
 				8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */,
 				8A1AE2552AA1819900EED489 /* OnBoardingTabViewController.swift in Sources */,
+				8ABDA7CF2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift in Sources */,
 				8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */,
 				8A1AE2AA2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.swift in Sources */,
 				8A1AE29C2AA3256D00EED489 /* HomeScreenItem.swift in Sources */,
@@ -683,6 +710,7 @@
 				8A38D6362A9FF870003FB5DA /* SceneDelegate.swift in Sources */,
 				8A1AE28D2AA2875A00EED489 /* RmUseCaseListener.swift in Sources */,
 				8A1AE2832AA25EE100EED489 /* RmRequestMethod.swift in Sources */,
+				8ABDA7CA2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift in Sources */,
 				8A1AE2902AA289A900EED489 /* RmBaseModel.swift in Sources */,
 				8A1AE2662AA1F6C700EED489 /* AuthScreenVC.swift in Sources */,
 				8A1AE2972AA28B4900EED489 /* HomeTabAction.swift in Sources */,

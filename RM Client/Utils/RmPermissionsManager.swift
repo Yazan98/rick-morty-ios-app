@@ -7,6 +7,8 @@
 
 import Foundation
 import UserNotifications
+import AVFoundation
+import Photos
 
 public final class RmPermissionsManager {
     
@@ -26,6 +28,17 @@ public final class RmPermissionsManager {
                 status = true
             }
         })
+        return status
+    }
+    
+    public func isStoragePermissionEnabled() -> Bool {
+        var status: Bool = false
+        let photosStatus = PHPhotoLibrary.authorizationStatus()
+        if photosStatus == .authorized {
+            status = true
+        } else {
+            status = false
+        }
         return status
     }
     

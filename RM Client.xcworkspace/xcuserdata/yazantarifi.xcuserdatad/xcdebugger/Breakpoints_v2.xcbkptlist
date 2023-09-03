@@ -142,8 +142,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>
@@ -190,8 +190,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>
@@ -270,8 +270,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>
@@ -318,42 +318,10 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "169FDB54-FDB8-4253-919A-A31BA2A77DD8 - 61ae4dffff7c5abe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, viewForSupplementaryElementOfKind: Swift.String, at: Foundation.IndexPath) -&gt; __C.UICollectionReusableView"
-                  moduleName = "RM Client"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "132"
-                  endingLineNumber = "132"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "169FDB54-FDB8-4253-919A-A31BA2A77DD8 - 952f157d3c3f29c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "RM Client"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
-                  offsetFromSymbolStart = "1460">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -366,42 +334,10 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8023C3CE-5089-4619-BFA6-2875890BF65B - 61ae4dffff7c5abe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, viewForSupplementaryElementOfKind: Swift.String, at: Foundation.IndexPath) -&gt; __C.UICollectionReusableView"
-                  moduleName = "RM Client"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "132"
-                  endingLineNumber = "132"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "8023C3CE-5089-4619-BFA6-2875890BF65B - 952f157d3c3f2e67"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "RM Client"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "1564">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -430,8 +366,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +382,8 @@
             filePath = "RM Client/Features/Home/Tabs/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
             <Locations>

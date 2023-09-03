@@ -16,32 +16,17 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
             
             // 1. Header Item
             screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
-            screenItems.append(HomeScreenHeaderItem())
             
             // 2. Notifications Permission
-//            if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
-//                screenItems.append(HomeScreenNotificationsPermissionItem())
-//            }
-//
-//            if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
-//                screenItems.append(HomeScreenNotificationsPermissionItem())
-//            }
-//
-//            if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
-//                screenItems.append(HomeScreenNotificationsPermissionItem())
-//            }
-//
-//            if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
-//                screenItems.append(HomeScreenNotificationsPermissionItem())
-//            }
+            if RmPermissionsManager.shared.isNotificationsPermissionEnabled() == false {
+                screenItems.append(HomeScreenNotificationsPermissionItem())
+            }
             
+            // 3. Storage Permission
+            if RmPermissionsManager.shared.isStoragePermissionEnabled() == false {
+                screenItems.append(HomeScreenStorageItem())
+            }
+
             self?.onSubmitLoadingValue(newState: false)
             self?.onSubmitResponseValue(value: screenItems)
         }
