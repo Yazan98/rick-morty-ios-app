@@ -9,6 +9,7 @@ import UIKit
 
 class CharacterOtherCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    private var clickListener: ((Int64, String) -> Void)? = nil
     private var list: [CharacterOtherInfoItem] = []
     @IBOutlet weak var titleView: UILabel!
     @IBOutlet weak var innerCollectionView: UICollectionView!
@@ -18,8 +19,9 @@ class CharacterOtherCollectionViewCell: UICollectionViewCell, UICollectionViewDe
         self.titleView?.text = "characters_other".getLocalizedString()
     }
     
-    public func onLoadData(item: CharacterOtherItem) {
+    public func onLoadData(item: CharacterOtherItem, click: @escaping (Int64, String) -> Void) {
         self.list = item.list
+        self.clickListener = click
         self.onSetupScreenCollectionView()
     }
     
@@ -49,7 +51,7 @@ class CharacterOtherCollectionViewCell: UICollectionViewCell, UICollectionViewDe
     ) -> UICollectionViewCell {
         let cell = list[indexPath.section]
         let cellView = collectionView.dequeueReusableCell(
-            withReuseIdentifier: CharacterItemConsts.CHARACTER_HEADER,
+            withReuseIdentifier: "CharacterOtherImage",
             for: indexPath
         ) as! CharacterOtherImageCollectionViewCell
         
@@ -62,8 +64,15 @@ class CharacterOtherCollectionViewCell: UICollectionViewCell, UICollectionViewDe
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let cellSize = ((UIScreen.main.bounds.width - 2) / 3) - 10
+        let cellSize = ((UIScreen.main.bounds.width - 2) / 3) - 15
         return CGSize(width: cellSize, height: cellSize)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = self.list[indexPath.section]
+        if clickListener != nil {
+            clickListener!(cell.id, cell.name)
+        }
     }
     
 }

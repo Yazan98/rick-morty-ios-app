@@ -10,4 +10,5 @@ import Foundation
 public struct CharacterOtherInfoItem {
     let id: Int64
     let image: String
+    let name: String
 }

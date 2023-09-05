@@ -120,7 +120,13 @@ class CharacterScreenViewController: RmBaseVC, UICollectionViewDelegate, UIColle
                 for: indexPath
             ) as! CharacterOtherCollectionViewCell
             
-            cellView.onLoadData(item: cell as! CharacterOtherItem)
+            cellView.onLoadData(item: cell as! CharacterOtherItem) { id, name in
+                self.onPushViewController(vc: CharacterScreenViewController.getInstance(
+                    id: id,
+                    name: name,
+                    isOtherAction: true
+                ))
+            }
             return cellView
             
         default:

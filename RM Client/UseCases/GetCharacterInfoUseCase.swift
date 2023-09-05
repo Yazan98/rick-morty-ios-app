@@ -69,7 +69,7 @@ public final class GetCharacterInfoUseCase: RmPropsUseCase<GetCharacterInfoUseCa
                     }
                 }
                 
-                if !props.isInfoAction {
+                if props.isInfoAction {
                     screenContentItems.append(CharacterOtherItem(list: self?.getOtherCharactersList(id: props.id) ?? []))
                 }
                 
@@ -90,7 +90,7 @@ public final class GetCharacterInfoUseCase: RmPropsUseCase<GetCharacterInfoUseCa
         }
         
         sectionCharacters.forEach { cachedItem in
-            results.append(CharacterOtherInfoItem(id: cachedItem.id, image: cachedItem.image))
+            results.append(CharacterOtherInfoItem(id: cachedItem.id, image: cachedItem.image, name: cachedItem.name))
         }
         
         return results
