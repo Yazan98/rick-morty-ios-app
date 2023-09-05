@@ -996,22 +996,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0CEFF22A-65AF-4664-8E86-3D040EF90353"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RM Client/UseCases/GetCharacterInfoUseCase.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "onExecute(props:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B5719EF9-BC05-4A7B-A091-011E1016EF33"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1019,8 +1003,8 @@
             filePath = "RM Client/UseCases/GetCharacterInfoUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "getOtherCharactersList(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1035,8 +1019,8 @@
             filePath = "RM Client/UseCases/GetCharacterInfoUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "getOtherCharactersList(id:)"
             landmarkType = "7">
          </BreakpointContent>

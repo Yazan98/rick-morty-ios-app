@@ -69,9 +69,7 @@ public final class GetCharacterInfoUseCase: RmPropsUseCase<GetCharacterInfoUseCa
                     }
                 }
                 
-                if props.isInfoAction {
-                    screenContentItems.append(CharacterOtherItem(list: self?.getOtherCharactersList(id: props.id) ?? []))
-                }
+                screenContentItems.append(CharacterOtherItem(list: self?.getOtherCharactersList(id: props.id) ?? []))
                 
                 self?.onSubmitResponseValue(value: screenContentItems)
             })

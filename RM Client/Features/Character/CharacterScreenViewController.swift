@@ -16,7 +16,6 @@ class CharacterScreenViewController: RmBaseVC, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     @IBOutlet weak var screenContentCollectionView: UICollectionView!
-    @IBOutlet weak var otherNavigationCollectionView: UICollectionView!
     
     public static func getInstance(id: Int64, name: String) -> CharacterScreenViewController {
         let vc = CharacterScreenViewController()
@@ -53,10 +52,6 @@ class CharacterScreenViewController: RmBaseVC, UICollectionViewDelegate, UIColle
             if status {
                 self.screenContentCollectionView.isHidden = true
             }
-        }
-        
-        viewModel.otherNavigationState.onSubscribe { list in
-            
         }
     }
     

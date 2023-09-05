@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterScreenViewController" customModule="RM_Client" customModuleProvider="target">
             <connections>
                 <outlet property="loadingView" destination="aAH-7T-1qP" id="LNJ-Rp-BQa"/>
-                <outlet property="otherNavigationCollectionView" destination="7ue-JW-yFO" id="daz-qn-Le3"/>
                 <outlet property="screenContentCollectionView" destination="elx-8c-3DB" id="xkC-bW-Mke"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="elx-8c-3DB">
-                    <rect key="frame" x="10" y="69" width="373" height="712"/>
+                    <rect key="frame" x="10" y="69" width="373" height="739"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SIi-KU-B3e">
                         <size key="itemSize" width="128" height="128"/>
@@ -31,35 +30,18 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7ue-JW-yFO">
-                    <rect key="frame" x="10" y="781" width="373" height="47"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="47" id="N0u-hM-oCK"/>
-                    </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xtv-ts-fGi">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aAH-7T-1qP">
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aAH-7T-1qP">
                     <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="7ue-JW-yFO" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="10" id="241-M6-cQU"/>
-                <constraint firstItem="7ue-JW-yFO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="5W7-gl-LYp"/>
-                <constraint firstItem="elx-8c-3DB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Nz6-3S-CTI"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7ue-JW-yFO" secondAttribute="trailing" constant="10" id="Ukx-ce-w7z"/>
-                <constraint firstItem="aAH-7T-1qP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VVm-Si-xXU"/>
-                <constraint firstItem="7ue-JW-yFO" firstAttribute="top" secondItem="elx-8c-3DB" secondAttribute="bottom" id="ZhK-hD-gqD"/>
-                <constraint firstItem="aAH-7T-1qP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gNy-4h-1u0"/>
-                <constraint firstItem="elx-8c-3DB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="hxi-3e-6jE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="elx-8c-3DB" secondAttribute="trailing" constant="10" id="oh1-88-vzo"/>
+                <constraint firstItem="elx-8c-3DB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="E5x-1q-Vfd"/>
+                <constraint firstItem="elx-8c-3DB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="ooW-Z2-ZqB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="elx-8c-3DB" secondAttribute="trailing" constant="10" id="qKh-As-vH3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="elx-8c-3DB" secondAttribute="bottom" constant="10" id="uAp-B6-jdN"/>
             </constraints>
             <point key="canvasLocation" x="110.68702290076335" y="-11.267605633802818"/>
         </view>
