@@ -21,6 +21,10 @@ public final class RmRequestUrl {
         return "\(getBaseUrl())character"
     }
     
+    public func getCharactersById(id: Int64) -> String {
+        return "\(getBaseUrl())character/\(id)"
+    }
+    
     private func getBaseUrl() -> String {
         return "https://rickandmortyapi.com/api/"
     }

@@ -36,6 +36,10 @@ public final class CharactersViewModel: RmBaseViewModel<CharactersAction> {
         return self.useCaseInstance!
     }
     
+    public override func getViewModelTitle() -> String {
+        return "CharactersViewModel"
+    }
+    
     deinit {
         getUseCase().onDestroyUseCase()
     }

@@ -44,6 +44,10 @@ public class HomeTabViewModel: RmBaseViewModel<HomeTabAction> {
         return screenUseCase!
     }
     
+    public override func getViewModelTitle() -> String {
+        return "HomeTabViewModel"
+    }
+    
     deinit {
         homeScreenItemsState.onDestroy()
     }

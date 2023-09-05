@@ -37,6 +37,10 @@ public class EpisodsViewModel: RmBaseViewModel<EpisodsAction> {
         return useCase!
     }
     
+    public override func getViewModelTitle() -> String {
+        return "EpisodsViewModel"
+    }
+    
     deinit {
         getEpisodsUseCaseInstance().onDestroyUseCase()
     }

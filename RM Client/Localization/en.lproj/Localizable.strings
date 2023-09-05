@@ -52,3 +52,11 @@
 "language" = "Language";
 "developer_link" = "Application Developer";
 "character" = "Character Info";
+
+"character_location" = "Location";
+"character_episode" = "Episode";
+"character_status" = "Status";
+"character_species" = "Species";
+"character_type" = "Type";
+"character_gender" = "Gender";
+"characters_other" = "Other Characters";

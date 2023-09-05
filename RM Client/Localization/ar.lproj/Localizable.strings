@@ -53,3 +53,12 @@
 "developer_link" = "مطور التطبيق";
 "character" = "معلومات الشخصية";
 "characters" = "الشخصيات";
+
+"character_location" = "الموقع";
+"character_episode" = "الحلقة";
+"character_status" = "الحالة";
+"character_species" = "الصنف";
+"character_type" = "النوع";
+"character_gender" = "الجنس";
+"characters_other" = "شخصيات اخرى";
+
