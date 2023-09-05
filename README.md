@@ -80,24 +80,7 @@ A Playground Project to Build a MVVM Application on Swift with Native SDK and Us
 | ![simulator_screenshot_18FD801E-A150-4255-9A2B-77FB257F932D](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/20c9f581-10c1-4605-a6f4-a6b9b5adad99) | ![simulator_screenshot_C20E6662-8DCC-4E2C-A45A-9043A0F7806B](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/b32d4598-1ad1-496c-99f0-3324cbf82a41)  |  ![simulator_screenshot_8363CC11-8633-4FFF-83CE-91BCEF117C27](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/a36ed3cc-e38a-47a4-823f-b343a2822f83) |
 | ![simulator_screenshot_84346DA3-7B2C-40B8-B4C7-328100092395](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/f335f8a6-9694-4b42-b5a4-5624536553d0)  | ![simulator_screenshot_60D97C91-BF5A-4C00-8423-11BFB0EE12AD](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/3694bb40-3314-4235-88ab-b934705aeb9e)  |  ![simulator_screenshot_21AC27E0-DCF3-4E13-9762-6296D4D83A57](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/014ed3c7-0673-4493-9d0c-80c641a3418e) |
 | ![simulator_screenshot_49676C01-5953-4948-8682-24D8455DAAB1](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/9c652d4b-b74d-43f0-8cf5-f7bc0936f0dc) | ![simulator_screenshot_44788AD5-61F3-4729-9557-2E98BAB01C70](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/78e18481-b30e-4232-803b-57441d38e349)  | ![simulator_screenshot_2EA3AF7C-98AF-4AD5-AD91-E42F21B764E2](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/a7bc07ad-c3f4-4092-bcd8-1a6b0521ea74) |
-
 | ![simulator_screenshot_66DBE7B4-48BF-47C6-BDE3-0DA9425B76C9](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/c9ab9ff9-4465-4bf1-8cd6-594baee77e8b) | ![simulator_screenshot_3EF86F59-0AF5-4148-9434-A52D04B0A1DD](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/60493065-e93a-4a5c-a2dd-7a4d641d7b7c)  | ![simulator_screenshot_3F69EDA9-E581-4F64-AE5B-85C3C443A4A5](https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/f1dfc273-c961-48cf-9ed7-c7aa456c705b) |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
