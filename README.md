@@ -20,6 +20,7 @@ A Playground Project to Build a MVVM Application on Swift with Native SDK and Us
 4. Min SDK Version: IOS 14
 5. Images Type (System Images, Png, Internet Images)
 6. Supported Languages (English, Arabic)
+7. [Api Docs](https://rickandmortyapi.com/documentation)
 
 ## Project Screens
 1. Splash Screen
