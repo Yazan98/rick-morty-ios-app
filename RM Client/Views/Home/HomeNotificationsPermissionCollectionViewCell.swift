@@ -18,6 +18,17 @@ class HomeNotificationsPermissionCollectionViewCell: UICollectionViewCell {
         acceptPermissionButton?.setTitle("home_notifications_button".getLocalizedString(), for: .normal)
         titleView?.text = "home_notifications_title".getLocalizedString()
         descriptionView?.text = "home_notifications_des".getLocalizedString()
+        
+        acceptPermissionButton?.addTarget(self, action: #selector(onRequestNotificationsPermission), for: .touchUpInside)
+    }
+    
+    @objc func onRequestNotificationsPermission() {
+        RmPermissionsManager.shared.onRequestNotificationsPermission {
+            Utils.onShowNotification(
+                title: "Notifications Permission",
+                body: "Now Rick and Morty can Submit Notifications"
+            )
+        }
     }
 
 }

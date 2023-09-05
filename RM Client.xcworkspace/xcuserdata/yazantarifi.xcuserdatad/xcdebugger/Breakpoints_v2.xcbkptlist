@@ -782,38 +782,6 @@
             filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "getCharachets(sectionName:query:onComplete:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9DF57F3C-FCF8-4010-988B-6C91499D65AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "getCharachets(sectionName:query:onComplete:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "44D4BCE6-DEF8-4F85-93F7-C38E26CFD6A0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
             landmarkName = "getCharachets(sectionName:query:onComplete:)"
@@ -823,7 +791,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C85A16B9-B15D-4EB0-A81B-AFC21B84F9B8"
+            uuid = "9DF57F3C-FCF8-4010-988B-6C91499D65AF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -839,6 +807,38 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "44D4BCE6-DEF8-4F85-93F7-C38E26CFD6A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C85A16B9-B15D-4EB0-A81B-AFC21B84F9B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "89724028-5B0E-4679-95F0-23129DCFFB8F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -846,8 +846,8 @@
             filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "getLocalCharactersBySectionName(sectionName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -862,8 +862,8 @@
             filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "getLocalCharactersBySectionName(sectionName:)"
             landmarkType = "7">
             <Locations>
@@ -955,8 +955,8 @@
             filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "getCharachets(sectionName:query:onComplete:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1071,6 +1071,324 @@
             endingLineNumber = "52"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "011A5823-0188-40D2-A58A-6D30D67D37CC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/Utils/RmPermissionsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "isNotificationsPermissionEnabled(onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "011A5823-0188-40D2-A58A-6D30D67D37CC - d345b62ba1cae90d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "011A5823-0188-40D2-A58A-6D30D67D37CC - cc9d7bc9930b87e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "011A5823-0188-40D2-A58A-6D30D67D37CC - 781ab4c7bd3199eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27F8D4AF-161D-4D84-BF61-9D4A77606049"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/Utils/RmPermissionsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "isNotificationsPermissionEnabled(onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27F8D4AF-161D-4D84-BF61-9D4A77606049 - 7a2dbf79ff9e0be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "27F8D4AF-161D-4D84-BF61-9D4A77606049 - 781ab4c7bd31980a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CBED719-CE7A-4DB0-9CC1-224EC0D34410"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/Utils/RmPermissionsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "isNotificationsPermissionEnabled(onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CBED719-CE7A-4DB0-9CC1-224EC0D34410 - 7a2dbf79ff9e0ba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "4CBED719-CE7A-4DB0-9CC1-224EC0D34410 - 781ab4c7bd31984c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCE5C93D-EA66-47CC-83A2-A1BA691395A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/Utils/RmPermissionsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "isNotificationsPermissionEnabled(onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DCE5C93D-EA66-47CC-83A2-A1BA691395A0 - 7a2dbf79ff9e0b60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "DCE5C93D-EA66-47CC-83A2-A1BA691395A0 - 781ab4c7bd31988e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEAEE23B-187A-4F8A-9BE1-8EC3D6422482"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/Utils/RmPermissionsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "isNotificationsPermissionEnabled(onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FEAEE23B-187A-4F8A-9BE1-8EC3D6422482 - 7a2dbf79ff9e0b0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "FEAEE23B-187A-4F8A-9BE1-8EC3D6422482 - cc9d7bc9930b86c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4919CA59-32B2-4CEA-A573-D708FB07E511"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/Utils/RmPermissionsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "isNotificationsPermissionEnabled(onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4919CA59-32B2-4CEA-A573-D708FB07E511 - d345b62ba1cae92e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "4919CA59-32B2-4CEA-A573-D708FB07E511 - 7a2dbf79ff9e0a47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled() -&gt; Swift.Bool"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "4919CA59-32B2-4CEA-A573-D708FB07E511 - 781ab4c7bd3199eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in RM_Client.RmPermissionsManager.isNotificationsPermissionEnabled(onComplete: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Utils/RmPermissionsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

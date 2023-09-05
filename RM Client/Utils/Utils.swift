@@ -15,7 +15,22 @@ public class Utils {
         let message = MDCSnackbarMessage()
         message.text = errorMessage
         MDCSnackbarManager.default.show(message)
-       }
+    }
+    
+    static func onShowNotification(title: String, body: String) {
+        let content = UNMutableNotificationContent()
+        content.categoryIdentifier = "permission_notifications"
+        content.title = title
+        content.subtitle = ""
+        content.body = body
+        content.sound = UNNotificationSound.default
+
+        // trigger:
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
     
 }
 

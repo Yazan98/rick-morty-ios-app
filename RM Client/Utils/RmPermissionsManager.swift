@@ -16,19 +16,17 @@ public final class RmPermissionsManager {
     
     private init() {}
     
-    public func isNotificationsPermissionEnabled() -> Bool {
-        var status: Bool = false
+    public func isNotificationsPermissionEnabled(onComplete: @escaping (Bool) -> Void) {
         let current = UNUserNotificationCenter.current()
         current.getNotificationSettings(completionHandler: { (settings) in
             if settings.authorizationStatus == .notDetermined {
-                status = false
+                onComplete(false)
             } else if settings.authorizationStatus == .denied {
-                status = false
+                onComplete(false)
             } else if settings.authorizationStatus == .authorized {
-                status = true
+                onComplete(true)
             }
         })
-        return status
     }
     
     public func isStoragePermissionEnabled() -> Bool {
@@ -40,6 +38,28 @@ public final class RmPermissionsManager {
             status = false
         }
         return status
+    }
+    
+    public func onRequestNotificationsPermission(onComplete: @escaping () -> Void) {
+        UNUserNotificationCenter
+            .current()
+            .requestAuthorization(options: [.alert, .sound, .badge]) { (success, error) in
+                if let error = error {
+                        print("Request Authorization Failed (\(error), \(error.localizedDescription))")
+                } else {
+                    onComplete()
+                }
+            }
+    }
+    
+    public func onRequestGalleryAccess(onComplete: @escaping () -> Void) {
+        AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+                if response {
+                    onComplete()
+                } else {
+
+                }
+        }
     }
     
 }

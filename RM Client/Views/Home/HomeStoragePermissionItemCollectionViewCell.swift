@@ -18,6 +18,17 @@ class HomeStoragePermissionItemCollectionViewCell: UICollectionViewCell {
         button?.setTitle("permission_button".getLocalizedString(), for: .normal)
         title?.text = "storage_permission".getLocalizedString()
         hint?.text = "storage_permission_hint".getLocalizedString()
+        
+        button?.addTarget(self, action: #selector(onRequestStoragePermission), for: .touchUpInside)
     }
 
+    @objc func onRequestStoragePermission() {
+        RmPermissionsManager.shared.onRequestGalleryAccess {
+            Utils.onShowNotification(
+                title: "Gallery Permission",
+                body: "Now Rick and Morty can Access Local Storage ..."
+            )
+        }
+    }
+    
 }
