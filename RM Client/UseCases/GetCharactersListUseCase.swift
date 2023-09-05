@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import RealmSwift
 
 public final class GetCharactersUseCase: RmUseCase<[RmCharacterModel]> {
     
     public override func execute() {
         getDispatchQueueInstance().async { [weak self] in
-            if self?.isLocalListEmpty() == true {
+            let cachedCharactersList = self?.getLocalCharactersList() ?? []
+            if cachedCharactersList.isEmpty {
                 self?.onSubmitLoadingValue(newState: true)
                 self?.getCharactersList(onCompletion: { list in
                     self?.onSubmitLoadingValue(newState: false)
@@ -19,7 +21,8 @@ public final class GetCharactersUseCase: RmUseCase<[RmCharacterModel]> {
                     self?.onWriteLocalDataList(list: list)
                 })
             } else {
-                self?.onSubmitResponseValue(value: self?.getLocalCharactersList() ?? [])
+                self?.onSubmitLoadingValue(newState: false)
+                self?.onSubmitResponseValue(value: cachedCharactersList)
             }
         }
     }
@@ -43,17 +46,32 @@ public final class GetCharactersUseCase: RmUseCase<[RmCharacterModel]> {
     }
     
     private func getLocalCharactersList() -> [RmCharacterModel] {
-        return []
+        let realm = try! Realm()
+        var results: [RmCharacterModel] = []
+        let charactersCachedList = realm.objects(RmCharacterEntity.self)
+        let sectionCharacters = charactersCachedList.sorted { firstEntity, secondEntity in
+            firstEntity.order < secondEntity.order
+        }
+        
+        sectionCharacters.forEach { cachedItem in
+            results.append(RmCharacterEntity.map(item: cachedItem))
+        }
+
+        return results
     }
     
     private func onWriteLocalDataList(list: [RmCharacterModel]) {
         getDispatchQueueInstance().async {
-            
+            let realm = try! Realm()
+            for (index,item) in list.enumerated() {
+                try! realm.write {
+                    realm.add(RmCharacterEntity.map(
+                        order: index,
+                        item: item
+                    ), update: .modified)
+                }
+            }
         }
-    }
-    
-    private func isLocalListEmpty() -> Bool {
-        return true
     }
     
 }

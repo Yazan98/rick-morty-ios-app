@@ -38,7 +38,6 @@ public class RmUseCase<Response> {
     
     public func onDestroyUseCase() {
         dispatchQueue?.suspend()
-        dispatchQueue = nil
         listener = nil
     }
     

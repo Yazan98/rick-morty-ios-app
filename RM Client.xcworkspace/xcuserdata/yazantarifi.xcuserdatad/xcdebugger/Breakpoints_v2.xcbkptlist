@@ -62,8 +62,8 @@
             filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "execute()"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,6 +322,38 @@
             endingLineNumber = "186"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "169FDB54-FDB8-4253-919A-A31BA2A77DD8 - 952f157d3c3f10b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "2784">
+               </Location>
+               <Location
+                  uuid = "169FDB54-FDB8-4253-919A-A31BA2A77DD8 - 952f157d3c3f118c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "2932">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -338,6 +370,38 @@
             endingLineNumber = "191"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8023C3CE-5089-4619-BFA6-2875890BF65B - 952f157d3c3f114a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184"
+                  offsetFromSymbolStart = "2868">
+               </Location>
+               <Location
+                  uuid = "8023C3CE-5089-4619-BFA6-2875890BF65B - 952f157d3c3f1623"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.HomeTabViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/HomeTabViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "3016">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -673,6 +737,243 @@
             startingLineNumber = "63"
             endingLineNumber = "63"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "294CD003-CBAD-4FEF-B1AF-335F630DCBD0 - 700fca7a8048997a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.SettingsTabViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/SettingsTabViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "294CD003-CBAD-4FEF-B1AF-335F630DCBD0 - 700fca7a80489a62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.SettingsTabViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/Features/Home/Tabs/SettingsTabViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC0C8ACA-6E56-444D-B63A-08BF40DD4150"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DF57F3C-FCF8-4010-988B-6C91499D65AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44D4BCE6-DEF8-4F85-93F7-C38E26CFD6A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C85A16B9-B15D-4EB0-A81B-AFC21B84F9B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89724028-5B0E-4679-95F0-23129DCFFB8F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "getLocalCharactersBySectionName(sectionName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7377CE15-EB2F-43DC-98E9-5E3832CC507A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "GetHomeScreenItemsVerticalListUseCase"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7377CE15-EB2F-43DC-98E9-5E3832CC507A - 850788540ea34959"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.GetHomeScreenItemsVerticalListUseCaseListener.__allocating_init() -&gt; RM_Client.GetHomeScreenItemsVerticalListUseCaseListener"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "7377CE15-EB2F-43DC-98E9-5E3832CC507A - 6409dbbf9afb1616"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.GetHomeScreenItemsVerticalListUseCaseListener.init() -&gt; RM_Client.GetHomeScreenItemsVerticalListUseCaseListener"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "7377CE15-EB2F-43DC-98E9-5E3832CC507A - 4cc6ca6bd055ef0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.GetHomeScreenItemsVerticalListUseCaseListener.deinit"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7377CE15-EB2F-43DC-98E9-5E3832CC507A - e6dd6f80fd574586"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.GetHomeScreenItemsVerticalListUseCaseListener.__deallocating_deinit"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7377CE15-EB2F-43DC-98E9-5E3832CC507A - b8bd8f8f5a739f22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RM_Client.GetHomeScreenItemsVerticalListUseCase.getLocalCharactersBySectionName(sectionName: Swift.String) -&gt; Swift.Array&lt;RM_Client.RmCharacterModel&gt;"
+                  moduleName = "RM Client"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazantarifi/Code/rick-morty-ios-app/RM%20Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDF7A3E6-0865-40C7-ABF9-75BFAFF3C5FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetHomeScreenItemsVerticalListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getCharachets(sectionName:query:onComplete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FFC231B-8002-40D5-B801-CB31BC7D61A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RM Client/UseCases/GetCharactersListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "execute()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

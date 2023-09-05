@@ -14,14 +14,11 @@ class SplashScreenVC: RmBaseVC {
 
         // Init Splash Design
         view.backgroundColor = RmThemeUtils.shared.getApplicationPrimaryColor()
-        let configuration = UIImage.SymbolConfiguration(textStyle: .footnote, scale: .small)
-        let image = UIImage(systemName: "person.circle.fill", withConfiguration: configuration)
+        let image = UIImage(named: "AppIcon")
 
         let imageView = UIImageView(image: image)
-        imageView.tintColor = .white
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         
         view.addSubview(imageView)
         

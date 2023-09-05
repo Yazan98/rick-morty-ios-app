@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]> {
     
@@ -18,7 +19,7 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
             screenItems.append(HomeScreenHeaderItem())
             
             // 2. List of Characters
-            self?.getCharachets(query: ["status": "alive"]) { result in
+            self?.getCharachets(sectionName: "alive", query: ["status": "alive"]) { result in
                 if result.isEmpty == false {
                     screenItems.append(HomeScreenCharactersListItem(
                         list: result,
@@ -32,7 +33,7 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
                 }
                 
                 // 4. Male Characters
-                self?.getCharachets(query: ["gender": "male"]) { result in
+                self?.getCharachets(sectionName: "male", query: ["gender": "male"]) { result in
                     if result.isEmpty == false {
                         screenItems.append(HomeScreenCharactersListItem(
                             list: result.reversed(),
@@ -46,7 +47,7 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
                     }
                     
                     // 6. Male Characters
-                    self?.getCharachets(query: ["gender": "female"]) { result in
+                    self?.getCharachets(sectionName: "female", query: ["gender": "female"]) { result in
                         if result.isEmpty == false {
                             screenItems.append(HomeScreenCharactersListItem(
                                 list: result.reversed(),
@@ -62,7 +63,17 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
         }
     }
     
-    private func getCharachets(query: [String:String], onComplete: @escaping ([RmCharacterModel]) -> Void) {
+    private func getCharachets(
+        sectionName: String,
+        query: [String:String],
+        onComplete: @escaping ([RmCharacterModel]) -> Void
+    ) {
+        let cachedListBySection = self.getLocalCharactersBySectionName(sectionName: sectionName)
+        if !cachedListBySection.isEmpty {
+            onComplete(cachedListBySection)
+            return
+        }
+        
         RmRequestManager.shared.onExecuteSingleRequest(
             requestInfo: RmRequestInfo(
                 requestMethod: .get,
@@ -72,10 +83,43 @@ public class GetHomeScreenItemsVerticalListUseCase : RmUseCase<[HomeScreenItem]>
             ),
             responseType: RmListResponse<RmCharacterModel>.self) { response in
                 onComplete(response.results ?? [])
+                self.onWriteLocalCacheHomeList(sectionName: sectionName, list: response.results ?? [])
             } onErrorResponse: { error in
                 // Read From Realm When Build Database
                 onComplete([])
             }
+    }
+    
+    private func onWriteLocalCacheHomeList(sectionName: String, list: [RmCharacterModel]) {
+        getDispatchQueueInstance().async {
+            let realm = try! Realm()
+            for (index,item) in list.enumerated() {
+                try! realm.write {
+                    realm.add(RmCharacterHomeEntity.map(
+                        order: index,
+                        sectionName: sectionName,
+                        item: item
+                    ), update: .modified)
+                }
+            }
+        }
+    }
+    
+    private func getLocalCharactersBySectionName(sectionName: String) -> [RmCharacterModel] {
+        let realm = try! Realm()
+        var results: [RmCharacterModel] = []
+        let homeScreenCharacters = realm.objects(RmCharacterHomeEntity.self)
+        let sectionCharacters = homeScreenCharacters.where {
+            $0.sectionKey == sectionName
+        }.sorted { firstEntity, secondEntity in
+            firstEntity.order < secondEntity.order
+        }
+        
+        sectionCharacters.forEach { cachedItem in
+            results.append(RmCharacterHomeEntity.map(item: cachedItem))
+        }
+
+        return results
     }
 }
 
