@@ -46,7 +46,9 @@
 "section_male" = "Male Characters";
 "section_female" = "Female Characters";
 "settings" = "Settings";
+"characters" = "Characters";
 
 "theme" = "Theme";
 "language" = "Language";
 "developer_link" = "Application Developer";
+"character" = "Character Info";

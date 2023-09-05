@@ -156,7 +156,14 @@ class HomeTabViewController: RmBaseVC, UICollectionViewDelegate, UICollectionVie
                 for: indexPath
             ) as! HomeScreenCharactersCollectionViewCell
             
-            headerCell.configure(item: cell)
+            headerCell.configure(item: cell, onItemClickListener: { item in
+                self.onPushViewController(vc: CharacterScreenViewController.getInstance(
+                    id: item.id ?? 0,
+                    name: item.name ?? ""
+                ))
+            }, onViewMoreClickLIstener: {
+                self.onPresentInsideEmbeddedNavController(vc: CharactersScreenViewController.getInstance())
+            })
                         
             return headerCell
             

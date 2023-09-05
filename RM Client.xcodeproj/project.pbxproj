@@ -76,6 +76,15 @@
 		8ABDA7F22AA5110E00761091 /* RmSettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F12AA5110E00761091 /* RmSettingsItem.swift */; };
 		8ABDA7F52AA5171400761091 /* SettingsItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F32AA5171400761091 /* SettingsItemCollectionViewCell.swift */; };
 		8ABDA7F62AA5171400761091 /* SettingsItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F42AA5171400761091 /* SettingsItemCollectionViewCell.xib */; };
+		8ABDA7FA2AA5425200761091 /* CharacterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F82AA5425200761091 /* CharacterScreenViewController.swift */; };
+		8ABDA7FB2AA5425200761091 /* CharacterScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7F92AA5425200761091 /* CharacterScreenViewController.xib */; };
+		8ABDA7FF2AA6AF9600761091 /* CharactersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA7FD2AA6AF9600761091 /* CharactersScreenViewController.swift */; };
+		8ABDA8002AA6AF9600761091 /* CharactersScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA7FE2AA6AF9600761091 /* CharactersScreenViewController.xib */; };
+		8ABDA8072AA6B61200761091 /* CharactersAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA8062AA6B61200761091 /* CharactersAction.swift */; };
+		8ABDA8092AA6B64100761091 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA8082AA6B64100761091 /* CharactersViewModel.swift */; };
+		8ABDA80B2AA6B6AF00761091 /* GetCharactersListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA80A2AA6B6AF00761091 /* GetCharactersListUseCase.swift */; };
+		8ABDA8102AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDA80E2AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.swift */; };
+		8ABDA8112AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDA80F2AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.xib */; };
 		B86B04827A1A13130C9A1DED /* Pods_RM_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C19FB42DE75FC12B507F33 /* Pods_RM_ClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -177,6 +186,15 @@
 		8ABDA7F12AA5110E00761091 /* RmSettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmSettingsItem.swift; sourceTree = "<group>"; };
 		8ABDA7F32AA5171400761091 /* SettingsItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		8ABDA7F42AA5171400761091 /* SettingsItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ABDA7F82AA5425200761091 /* CharacterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScreenViewController.swift; sourceTree = "<group>"; };
+		8ABDA7F92AA5425200761091 /* CharacterScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterScreenViewController.xib; sourceTree = "<group>"; };
+		8ABDA7FD2AA6AF9600761091 /* CharactersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenViewController.swift; sourceTree = "<group>"; };
+		8ABDA7FE2AA6AF9600761091 /* CharactersScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersScreenViewController.xib; sourceTree = "<group>"; };
+		8ABDA8062AA6B61200761091 /* CharactersAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAction.swift; sourceTree = "<group>"; };
+		8ABDA8082AA6B64100761091 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		8ABDA80A2AA6B6AF00761091 /* GetCharactersListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharactersListUseCase.swift; sourceTree = "<group>"; };
+		8ABDA80E2AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVerticalItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABDA80F2AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterVerticalItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		B590DFCCD614A5925A017F66 /* Pods-RM Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RM Client.debug.xcconfig"; path = "Target Support Files/Pods-RM Client/Pods-RM Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,6 +263,8 @@
 		8A0FC3572A9FFC7A00F4B558 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8ABDA7FC2AA6AF8100761091 /* Characters */,
+				8ABDA7F72AA5422A00761091 /* Character */,
 				8A0FC3602A9FFD9400F4B558 /* OnBoarding */,
 				8A0FC35D2A9FFCB600F4B558 /* Auth */,
 				8A0FC35C2A9FFCA700F4B558 /* Settings */,
@@ -269,6 +289,7 @@
 			children = (
 				8A1AE29F2AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift */,
 				8ABDA7E92AA4F28200761091 /* GetEpisodsUseCase.swift */,
+				8ABDA80A2AA6B6AF00761091 /* GetCharactersListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -283,6 +304,8 @@
 				8ABDA7EC2AA4F67F00761091 /* EpisodeCollectionViewCell.xib */,
 				8ABDA7F32AA5171400761091 /* SettingsItemCollectionViewCell.swift */,
 				8ABDA7F42AA5171400761091 /* SettingsItemCollectionViewCell.xib */,
+				8ABDA80E2AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.swift */,
+				8ABDA80F2AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -478,6 +501,34 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		8ABDA7F72AA5422A00761091 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				8ABDA7F82AA5425200761091 /* CharacterScreenViewController.swift */,
+				8ABDA7F92AA5425200761091 /* CharacterScreenViewController.xib */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		8ABDA7FC2AA6AF8100761091 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				8ABDA8052AA6B60700761091 /* ViewModel */,
+				8ABDA7FD2AA6AF9600761091 /* CharactersScreenViewController.swift */,
+				8ABDA7FE2AA6AF9600761091 /* CharactersScreenViewController.xib */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		8ABDA8052AA6B60700761091 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8ABDA8062AA6B61200761091 /* CharactersAction.swift */,
+				8ABDA8082AA6B64100761091 /* CharactersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -593,6 +644,7 @@
 				8ABDA7F62AA5171400761091 /* SettingsItemCollectionViewCell.xib in Resources */,
 				8ABDA7D02AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.xib in Resources */,
 				8A1AE27E2AA256E300EED489 /* SettingsTabViewController.xib in Resources */,
+				8ABDA8112AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.xib in Resources */,
 				8A1AE2AB2AA3EA6200EED489 /* HomeScreenHeaderCollectionViewCell.xib in Resources */,
 				8ABDA7E02AA48F9600761091 /* CharacterHorizantelCollectionViewCell.xib in Resources */,
 				8A1AE26B2AA24FD300EED489 /* HomeScreenVC.xib in Resources */,
@@ -600,9 +652,11 @@
 				8A1AE2762AA256B200EED489 /* HomeTabViewController.xib in Resources */,
 				8A1AE25C2AA1987100EED489 /* Localizable.strings in Resources */,
 				8A1AE2672AA1F6C700EED489 /* AuthScreenVC.xib in Resources */,
+				8ABDA7FB2AA5425200761091 /* CharacterScreenViewController.xib in Resources */,
 				8A38D63D2A9FF873003FB5DA /* Assets.xcassets in Resources */,
 				8ABDA7DC2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.xib in Resources */,
 				8A1AE2522AA1781D00EED489 /* OnBoardingScreenVC.xib in Resources */,
+				8ABDA8002AA6AF9600761091 /* CharactersScreenViewController.xib in Resources */,
 				8ABDA7CB2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,6 +790,7 @@
 				8A1AE2892AA281BB00EED489 /* RmRequestManager.swift in Sources */,
 				8ABDA7D22AA47FF800761091 /* HomeScreenStorageItem.swift in Sources */,
 				8A1AE2A22AA3989200EED489 /* RmPermissionsManager.swift in Sources */,
+				8ABDA8102AA6BB3700761091 /* CharacterVerticalItemCollectionViewCell.swift in Sources */,
 				8A1AE2942AA28B3200EED489 /* HomeTabViewModel.swift in Sources */,
 				8ABDA7F52AA5171400761091 /* SettingsItemCollectionViewCell.swift in Sources */,
 				8ABDA7EA2AA4F28200761091 /* GetEpisodsUseCase.swift in Sources */,
@@ -743,6 +798,7 @@
 				8ABDA7DB2AA48BDD00761091 /* HomeScreenCharactersCollectionViewCell.swift in Sources */,
 				8A1AE2712AA2541800EED489 /* HomeScreenContentTabViewController.swift in Sources */,
 				8A1AE28B2AA286F400EED489 /* RmUseCase.swift in Sources */,
+				8ABDA7FA2AA5425200761091 /* CharacterScreenViewController.swift in Sources */,
 				8A1AE2792AA256D500EED489 /* EpisodsTabViewController.swift in Sources */,
 				8ABDA7D82AA48B3800761091 /* HomeScreenCharactersListItem.swift in Sources */,
 				8A1AE26A2AA24FD300EED489 /* HomeScreenVC.swift in Sources */,
@@ -753,6 +809,7 @@
 				8A1AE2812AA25DD100EED489 /* RmBaseViewModel.swift in Sources */,
 				8ABDA7E42AA4ED1A00761091 /* RmEpisodModel.swift in Sources */,
 				8ABDA7E62AA4F1C200761091 /* EpisodsAction.swift in Sources */,
+				8ABDA8072AA6B61200761091 /* CharactersAction.swift in Sources */,
 				8A1AE2552AA1819900EED489 /* OnBoardingTabViewController.swift in Sources */,
 				8ABDA7CF2AA47FCB00761091 /* HomeStoragePermissionItemCollectionViewCell.swift in Sources */,
 				8A0FC35F2A9FFCE400F4B558 /* RmLocalStorage.swift in Sources */,
@@ -764,6 +821,7 @@
 				8A1AE2752AA256B200EED489 /* HomeTabViewController.swift in Sources */,
 				8A1AE2582AA197F600EED489 /* Utils.swift in Sources */,
 				8ABDA7D62AA485B300761091 /* RmListResponse.swift in Sources */,
+				8ABDA7FF2AA6AF9600761091 /* CharactersScreenViewController.swift in Sources */,
 				8A1AE2A02AA3279800EED489 /* GetHomeScreenItemsVerticalListUseCase.swift in Sources */,
 				8ABDA7DF2AA48F9600761091 /* CharacterHorizantelCollectionViewCell.swift in Sources */,
 				8A1AE29E2AA3270300EED489 /* HomeScreenHeaderItem.swift in Sources */,
@@ -772,6 +830,7 @@
 				8A1AE28D2AA2875A00EED489 /* RmUseCaseListener.swift in Sources */,
 				8ABDA7ED2AA4F67F00761091 /* EpisodeCollectionViewCell.swift in Sources */,
 				8A1AE2832AA25EE100EED489 /* RmRequestMethod.swift in Sources */,
+				8ABDA8092AA6B64100761091 /* CharactersViewModel.swift in Sources */,
 				8ABDA7CA2AA46ECF00761091 /* HomeNotificationsPermissionCollectionViewCell.swift in Sources */,
 				8ABDA7F22AA5110E00761091 /* RmSettingsItem.swift in Sources */,
 				8A1AE2902AA289A900EED489 /* RmBaseModel.swift in Sources */,
@@ -779,6 +838,7 @@
 				8A1AE2972AA28B4900EED489 /* HomeTabAction.swift in Sources */,
 				8ABDA7D42AA484F200761091 /* RmCharacterModel.swift in Sources */,
 				8A1AE2872AA25FC500EED489 /* RmRequestInfo.swift in Sources */,
+				8ABDA80B2AA6B6AF00761091 /* GetCharactersListUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

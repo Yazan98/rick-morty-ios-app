@@ -22,6 +22,16 @@ public class RmBaseVC : UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    public func onPushInsideEmbeddedNavController(vc: RmBaseVC) {
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.navigationController?.pushViewController(navigationController, animated: true)
+    }
+    
+    public func onPresentInsideEmbeddedNavController(vc: RmBaseVC) {
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
     public func onPushViewController(vc: UITabBarController) {
         self.navigationController?.pushViewController(vc, animated: true)
     }

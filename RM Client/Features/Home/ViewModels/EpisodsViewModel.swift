@@ -37,4 +37,8 @@ public class EpisodsViewModel: RmBaseViewModel<EpisodsAction> {
         return useCase!
     }
     
+    deinit {
+        getEpisodsUseCaseInstance().onDestroyUseCase()
+    }
+    
 }

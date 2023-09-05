@@ -24,14 +24,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foh-WT-S6J">
-                        <rect key="frame" x="317.66666666666669" y="20" width="80.333333333333314" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" name="PrimaryColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wnC-S3-LXx">
-                        <rect key="frame" x="2" y="71" width="414" height="140"/>
+                        <rect key="frame" x="2" y="67" width="414" height="144"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l7I-fb-ze4">
                             <size key="itemSize" width="128" height="128"/>
@@ -40,24 +34,34 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ5-cQ-wer">
+                        <rect key="frame" x="303.66666666666669" y="12" width="104.33333333333331" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="View More">
+                            <color key="baseForegroundColor" name="PrimaryColor"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="onViewMoreClickListener:" destination="gTV-IL-0wX" eventType="touchUpInside" id="del-rq-C8M"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="wnC-S3-LXx" firstAttribute="top" secondItem="HBD-LY-ytL" secondAttribute="bottom" constant="30" id="5En-zt-thp"/>
-                <constraint firstAttribute="bottom" secondItem="wnC-S3-LXx" secondAttribute="bottom" constant="2" id="Nsx-Yg-baZ"/>
-                <constraint firstItem="HBD-LY-ytL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Swq-a4-dgC"/>
-                <constraint firstItem="HBD-LY-ytL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="VEJ-qf-eg1"/>
-                <constraint firstAttribute="trailing" secondItem="foh-WT-S6J" secondAttribute="trailing" constant="19.999999999999943" id="c66-XR-iI1"/>
-                <constraint firstAttribute="trailing" secondItem="wnC-S3-LXx" secondAttribute="trailing" constant="2" id="g6u-my-SmQ"/>
-                <constraint firstItem="wnC-S3-LXx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="u94-4B-leZ"/>
-                <constraint firstItem="HBD-LY-ytL" firstAttribute="baseline" secondItem="foh-WT-S6J" secondAttribute="baseline" id="zdb-FE-6aB"/>
+                <constraint firstItem="wnC-S3-LXx" firstAttribute="top" secondItem="AJ5-cQ-wer" secondAttribute="bottom" constant="20" id="1al-ue-RS2"/>
+                <constraint firstItem="AJ5-cQ-wer" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="4oX-yY-l4k"/>
+                <constraint firstAttribute="trailing" secondItem="AJ5-cQ-wer" secondAttribute="trailing" constant="10" id="HBT-6M-ghv"/>
+                <constraint firstAttribute="trailing" secondItem="wnC-S3-LXx" secondAttribute="trailing" constant="2" id="J2R-Z3-cDa"/>
+                <constraint firstItem="wnC-S3-LXx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="LHb-q3-NoO"/>
+                <constraint firstItem="HBD-LY-ytL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="ShA-OL-v92"/>
+                <constraint firstAttribute="bottom" secondItem="wnC-S3-LXx" secondAttribute="bottom" constant="2" id="c6g-8s-3Rd"/>
+                <constraint firstItem="HBD-LY-ytL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="sXS-hK-92w"/>
             </constraints>
             <size key="customSize" width="418" height="213"/>
             <connections>
                 <outlet property="innerCollectionView" destination="wnC-S3-LXx" id="vpb-FM-anH"/>
                 <outlet property="sectionTitle" destination="HBD-LY-ytL" id="Pwk-Xc-NwU"/>
-                <outlet property="sectionViewMore" destination="foh-WT-S6J" id="qAI-Xo-LYK"/>
+                <outlet property="sectionViewMore" destination="AJ5-cQ-wer" id="Els-xZ-3o7"/>
             </connections>
             <point key="canvasLocation" x="306.87022900763355" y="44.718309859154935"/>
         </collectionViewCell>
