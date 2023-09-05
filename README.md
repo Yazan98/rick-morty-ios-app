@@ -6,8 +6,7 @@ A Native IOS Application Built with Swift, UIKit, Rick and Morty Public Api to T
 
 A Playground Project to Build a MVVM Application on Swift with Native SDK and Use Permissions, Local Storage, Restful Apis also the Main Focus on Building the UI is The Navigation and Build a Multiple Navigation in each Stack (Home Screen and Characters Screen)
 
-<img width="1728" alt="Screenshot 2023-09-05 at 3 07 31 PM" src="https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/0c57ce76-30a2-4b33-b5d2-4df3e35f19ac">
-
+<img width="1728" alt="Screenshot 2023-09-05 at 3 35 05 PM" src="https://github.com/Yazan98/rick-morty-ios-app/assets/29167110/831cffb1-e6f9-4ad8-8776-3e1bbbfeaa78">
 
 ## Libraries
 1. Realm
