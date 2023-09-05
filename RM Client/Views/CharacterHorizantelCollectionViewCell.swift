@@ -20,7 +20,8 @@ class CharacterHorizantelCollectionViewCell: UICollectionViewCell {
     public func configure(item: RmCharacterModel) {
         nameView?.text = item.name ?? ""
         descriptionView?.text = "\(item.species ?? "") - \(item.status ?? "")"
-        
+        self.characterImageView?.image = nil;
+
         characterImageView?.layer.masksToBounds = true
         DispatchQueue.main.async { [weak self] in
           self?.characterImageView?.layer.cornerRadius = 5

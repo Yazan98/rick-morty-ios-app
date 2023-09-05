@@ -42,7 +42,7 @@ class CharacterOtherCollectionViewCell: UICollectionViewCell, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func collectionView(
@@ -64,8 +64,7 @@ class CharacterOtherCollectionViewCell: UICollectionViewCell, UICollectionViewDe
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let cellSize = ((UIScreen.main.bounds.width - 2) / 3) - 15
-        return CGSize(width: cellSize, height: cellSize)
+        return CGSize(width: UIScreen.main.bounds.width - 2, height: 160)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

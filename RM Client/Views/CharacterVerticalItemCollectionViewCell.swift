@@ -16,7 +16,8 @@ class CharacterVerticalItemCollectionViewCell: UICollectionViewCell {
     public func configure(item: RmCharacterModel?) {
         descriptionView?.text = "\(item?.species ?? "") - \(item?.gender ?? "") - \(item?.status ?? "")"
         titleView?.text = item?.name ?? ""
-        
+        self.imageView?.image = nil;
+
         DispatchQueue.main.async { [weak self] in
           self?.imageView?.layer.cornerRadius = 5
           self?.imageView?.clipsToBounds = true
